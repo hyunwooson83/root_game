@@ -1,0 +1,31 @@
+<?php include_once('../sub_header.html'); ?>
+<div class="casino_bg">
+	<div class="casino_wrap">
+		<?php include_once('./casino_head.html'); ?>
+		<script>
+		$(document).ready(function(){
+			$(".sub_header > .top2 > li:nth-child(7)").addClass('active');
+			$(".casino_head > ul > li:nth-child(4)").addClass('on');
+		});
+		</script>	
+		<div class="casino_sub">
+			<div class="sub_title">
+				<div class="title1">타이산 게임소개</div>
+				<div class="title2">ABOUT TAISHAN GAME</div>
+			</div>
+			<ul class="sub_menu">
+				<li onclick="location.href='/_go/renewal/casino/taishan_intro.html'">게임시작</li>
+				<li class="on" onclick="location.href='/_go/renewal/casino/taishan_intro.html'">게임소개</li>
+				<li onclick="location.href='/_go/renewal/casino/taishan_manual.html'">게임방법</li>
+				<li onclick="location.href='/_go/renewal/cash_in_casino.html'">충전신청</li>
+				<li onclick="location.href='/_go/renewal/cash_out_casino.html'">환전신청</li>
+			</ul>
+			<div class="about_con">
+				<img src="/_go/renewal/img/casino/about_taishan.png">
+			</div>
+		</div>
+
+
+	</div>
+</div>
+<?php include_once('../footer.html'); ?>

@@ -1,0 +1,397 @@
+<?php
+$pstyle = "game";
+include_once('../sub_header.html');
+include_once('./mini_header.html');
+?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(6)").addClass('active');
+	$(".mini_head ul > li:nth-child(1)").addClass('on');
+});
+</script>
+
+<div id="mini_boxwrap">
+
+	<div id="mini_box_right">
+
+		<div class="mini_gamemovie">
+			<div class="power_ladder">
+				<iframe src="http://ntry.com/scores/powerball/main.php"  scrolling="no" ></iframe>
+			</div>
+		</div>
+
+		<var class="line"></var>		
+		<h2 style="font-size:17px; color:#ddd; margin:10px 0 10px">게임선택</h2>
+
+		<ul class="powerball_bettingbtn first">
+			<li>
+				<dl>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_pb_odd.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_even.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+				</dl>
+				<em>게임 1</em>
+				<span>일반볼 홀/짝</span>
+			</li>
+			<li>
+				<dl>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_odd.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_pb_even.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+				</dl>
+				<em>게임 2</em>
+				<span>파워볼 홀/짝</span>
+			</li>
+			<li class="wide last">
+				<dl>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_small.png" /></label>
+						<dfn>2.90</dfn>
+					</dd>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_pb_middle.png" /></label>
+						<dfn>2.90</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_big.png" /></label>
+						<dfn>2.90</dfn>
+					</dd>
+				</dl>
+				<em>게임 3</em>
+				<span>일반볼 구간</span>
+			</li>
+		</ul>
+		<ul class="powerball_bettingbtn">
+			<li class="one">
+				<dl>
+					<dd>
+						<label>0</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>1</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>2</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>3</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd class="active">
+						<label>4</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>5</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>6</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>7</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>8</label>
+						<dfn>9.00</dfn>
+					</dd>
+					<dd>
+						<label>9</label>
+						<dfn>9.00</dfn>
+					</dd>
+				</dl>
+				<em>게임 4</em>
+				<span>파워볼 숫자</span>
+			</li>
+			<li class="two first color">
+				<dl>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_a.png" /><div><img src="/_go/renewal/img/mini_btn_pb_a_on.png" /></div></label>
+						<dfn>3.15</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_b.png" /><div><img src="/_go/renewal/img/mini_btn_pb_b_on.png" /></div></label>
+						<dfn>3.15</dfn>
+					</dd>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_pb_c.png" /><div><img src="/_go/renewal/img/mini_btn_pb_c_on.png" /></div></label>
+						<dfn>3.15</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_d.png" /><div><img src="/_go/renewal/img/mini_btn_pb_d_on.png" /></div></label>
+						<dfn>3.15</dfn>
+					</dd>
+				</dl>
+				<em>게임 5</em>
+				<span>파워볼 구간</span>
+			</li>
+			<li class="two">
+				<dl>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_odd_under.png" /></label>
+						<dfn>4.75</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_even_under.png" /></label>
+						<dfn>3.15</dfn>
+					</dd>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_pb_odd_over.png" /></label>
+						<dfn>3.15</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_pb_even_over.png" /></label>
+						<dfn>4.75</dfn>
+					</dd>
+				</dl>
+				<em>게임 6</em>
+				<span>파워볼 언오버</span>
+			</li>
+		</ul>
+
+		<dl class="mini_bettingslip">
+			<dt>
+				<div>
+					<em>게임분류</em>
+					<span>파워볼게임</span>
+				</div>
+				<div>
+					<em>게임선택</em>
+					<span>4</span>
+				</div>
+				<div>
+					<em>배당률</em>
+					<span>9.00</span>
+				</div>
+			</dt>
+			<dd>
+				<div class="bet_input_wrap">
+					<div class="title">베팅금액입력</div>	
+					<div class="bet_input1">
+						<div>
+							<span>베팅금액</span>
+							<input type="text" class="bet_text1" value="5,000">
+						</div>
+						<span>5,000</span>
+						<span>10,000</span>
+						<span>50,000</span>
+					</div>
+					<div class="bet_input1">
+						<div>
+							<span>적중금액</span>
+							<input type="text" class="bet_text1 red" value="5,000">
+						</div>
+						<span>100,000</span>
+						<span>500,000</span>
+						<span>1,000,000</span>
+					</div>
+					<div class="bet_input2">
+						<span>잔돈</span>
+						<span class="reset">초기화</span>
+						<div>
+							<div class="self">
+								<span>직접입력</span>
+							</div>
+							<input type="text" class="bet_text2" value="5,000">
+						</div>
+					</div>
+					<input type="button" value="베팅하기" class="bet_action">
+				</div>
+			</dd>
+		</dl>
+
+		<var class="line"></var>
+		<div class="mini_table">
+			<h2 class="powerball">지난회차결과보기</h2>
+			<table>
+				<thead class="powerball">
+					<tr>
+						<td>회차</td>
+						<td>당첨번호결과</td>
+						<td>숫자 합</td>
+						<td>숫자 홀/짝</td>
+						<td>파워볼</td>
+						<td>파워볼 홀/짝</td>
+						<td>대/중/소</td>
+						<td>파워볼 구간</td>
+					</tr>
+				</thead>
+				<tbody class="powerball">
+					<tr>
+						<td>689455</td>
+						<td>18, 06, 03, 24, 05</td>
+						<td>76</td>
+						<td>짝</td>
+						<td>7</td>
+						<td>홀</td>
+						<td>중(65~80)</td>
+						<td>D(7~9)</td>
+					</tr>
+					<tr>
+						<td>689454</td>
+						<td>12, 11, 09, 07, 05</td>
+						<td>44</td>
+						<td>짝</td>
+						<td>1</td>
+						<td>홀</td>
+						<td>소(15~64)</td>
+						<td>A(0~2)</td>
+					</tr>
+					<tr>
+						<td>689453</td>
+						<td>08, 17, 07, 25, 19</td>
+						<td>76</td>
+						<td>짝</td>
+						<td>1</td>
+						<td>홀</td>
+						<td>중(65~80)</td>
+						<td>A(0~2)</td>
+					</tr>
+					<tr>
+						<td>689452</td>
+						<td>18, 06, 03, 24, 05</td>
+						<td>98</td>
+						<td>짝</td>
+						<td>1</td>
+						<td>홀</td>
+						<td>대(81~130)</td>
+						<td>D(7~9)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<var class="line"></var>
+		<div class="mini_table">
+			<h2>베팅내역</h2>
+			<table>
+				<thead>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>번호</td>
+						<td>회차</td>
+						<td>베팅시간</td>
+						<td>게임분류</td>
+						<td>베팅내역</td>
+						<td>배당률</td>
+						<td>베팅금액</td>
+						<td>적중/손실</td>
+						<td>적중여부</td>
+					</tr>
+				</thead>
+				<tbody class="betting_history">
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 구간</b></td>
+						<td>소(15~64)</td>
+						<td>2.90</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+14,500</td>
+						<td class="shot f_gobet">적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 홀/짝</b></td>
+						<td>홀</td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td class="shot">미적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 구간</b></td>
+						<td>소(15~64)</td>
+						<td>2.90</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+14,500</td>
+						<td class="shot f_gobet" >적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 홀/짝</b></td>
+						<td>짝</td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td class="shot">미적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 구간</b></td>
+						<td>소(15~64)</td>
+						<td>2.90</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+14,500</td>
+						<td class="shot f_gobet">적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>일반볼 홀/짝</b></td>
+						<td>홀</td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td class="shot">미적중</td>
+					</tr>				
+				</tbody>
+			</table>
+			<h3>
+				<code class="gray">전체삭제</code>
+				<code class="gray">선택삭제</code>
+				<code onclick="location.href='/_go/renewal/mypage/betlist_mini_powerb.html'">전체 베팅내역</code>
+			</h3>
+		</div>
+		<var class="line"></var>
+		<dl class="mini_footinfo">
+			<dt>알아두세요!</dt>
+			<dd>· 본 서비스는 나눔로또의 파워볼 결과를 기준으로 정산처리 하며, 파워볼의 결과와 무관합니다.</dd>
+			<dd>· 한번 베팅한 게임은 베팅취소 및 베팅수정이 불가합니다.</dd>
+			<dd>· 베팅은 본인의 보유 예치금 기준으로 베팅 가능하며, 추첨결과에 따라 명시된 배당률 기준으로 적립해드립니다.</dd>
+			<dd>· 부적절한 방법(ID도용, 불법프로그램, 시스템 베팅 등)으로 베팅을 할 경우 무효처리되며, 전액 몰수 / 강제탈퇴 등 불이익을 받을 수 있습니다.</dd>
+			<dd>· 파워볼게임의 모든 배당률은 당사의 운영정책에 따라 언제든지 상/하향 조정될 수 있습니다.</dd>
+			<dd>· 모든 배당률은 당사의 운영정책에 따라 언제든지 상/하향 조정될 수 있습니다.</dd>
+		</dl>
+
+	</div> <!-- mini_box_right -->
+
+</div>
+
+
+<?php
+include_once('./mini_footer.html');
+include_once('../footer.html');
+?>

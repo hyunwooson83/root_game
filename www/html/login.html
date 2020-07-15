@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<link rel="shortcut icon" href="/img/favicon.png">
+<title>gobet</title>
+<link rel="stylesheet" href="/_go/renewal/css/gobet_login.css" />
+<script src="/_go/renewal/js/jquery-1.11.1.min.js"></script>
+<script src="/_go/renewal/js/jquery.easing.1.3.js"></script>
+<script src="/_go/renewal/js/gobet_login.js"></script>
+<script src="/_go/renewal/js/placeholders.min.js"></script>
+</head>
+<body>
+
+<div id="fullpage_wrap">
+
+	<div class="video_bg">
+		<video class="umMovie" autoplay loop muted><source src="/_go/renewal/video/soccer5.mp4" type="video/mp4"></video>
+		<div class="video_filter"></div>
+	</div>
+
+	<div class="login_area">
+		<div class="login_line top"></div>
+		<div class="login_line bottom"></div>
+		<div class="login_box">
+			<h1><img src="/_go/renewal/img/login/login_logo.png"></h1>
+			<ul class="login_menu">
+				<li class="on" onClick="member_cancel();">LOGIN</li>
+				<li onClick="member_join();">JOIN</li>
+			</ul>
+			<h3><input type="text" placeholder="MEMBER ID"></h3>
+			<h4><input type="password" placeholder="PASSWORD"></h4>
+			<h5>
+				<!--<span class="join" onClick="member_join();">JOIN</span>-->
+				<span class="login" onClick="location.href='/_go/renewal/gobet.html'">LOGIN</span>
+			</h5>
+		</div>
+	</div>	
+	
+	<div class="join_area">
+		<div class="join_line top"></div>
+		<div class="join_line bottom"></div>
+		<div class="join_box">
+			<h1><img src="/_go/renewal/img/login/login_logo.png"></h1>
+			<ul class="login_menu">
+				<li onClick="member_cancel();">LOGIN</li>
+				<li class="on"  onClick="member_join();">JOIN</li>
+			</ul>
+
+
+
+			<ul>
+				<li class="gap">
+					<em>
+						<input type="text" placeholder="아이디"><code>영문, 숫자만 입력가능하며 최소 4자이상</code>
+					</em>
+				</li>
+				<li>
+					<em>
+						<input type="password" placeholder="비밀번호">
+					</em>
+				</li>
+				<li class="gap">
+					<em>
+						<input type="password" placeholder="비밀번호 확인">
+						<code class="line2">영문, 숫자, 특수문자를 한 자 이상 반드시 포함한 6 ~ 16자</code>
+					</em>
+				</li>
+				<li>
+					<em>
+						<input type="text" placeholder=" 닉네임"><code class="line2">영문 또는 한글 4 ~ 12자</code>
+					</em>
+				</li>
+				<li>
+					<em>
+						<input type="text" placeholder="휴대폰 번호">
+					</em>
+				</li>
+				<li class="gap" style="margin-bottom:10px">
+					<em>
+						<input type="text"  placeholder="추천인 아이디">
+					</em>
+				</li>
+				<li>
+					<em>
+						<select class="middle">
+							<option value="">은행선택</option>
+                            <option value="하나은행">하나은행</option>
+                            <option value="제주은행">제주은행</option>
+                            <option value="전북은행">전북은행</option>
+                            <option value="우체국">우체국</option>
+                            <option value="우리은행">우리은행</option>
+                            <option value="외환은행">외환은행</option>
+                            <option value="아메리카">아메리카</option>
+                            <option value="씨티은행">씨티은행</option>
+                            <option value="신협">신협</option>
+                            <option value="신한은행">신한은행</option>
+                            <option value="수협">수협</option>
+                            <option value="새마을금고">새마을금고</option>
+                            <option value="상호저축은행">상호저축은행</option>
+                            <option value="산업은행">산업은행</option>
+                            <option value="부산은행">부산은행</option>
+                            <option value="미즈호">미즈호</option>
+                            <option value="미쓰비시">미쓰비시</option>
+                            <option value="도이치">도이치</option>
+                            <option value="대구은행">대구은행</option>
+                            <option value="농협">농협</option>
+                            <option value="기업은행">기업은행</option>
+                            <option value="국민은행">국민은행</option>
+                            <option value="광주은행">광주은행</option>
+                            <option value="경남은행">경남은행</option>
+                            <option value="SC제일은행">SC제일은행</option>
+                            <option value="JS모간">JS모간</option>
+                            <option value="HSBS">HSBS</option>
+                            <option value="ANB암로">ANB암로</option>
+						</select>
+						<input type="text" class="small" placeholder="예금주">
+					</em>
+				</li>
+				<li>
+					<em>
+						<input type="text" placeholder="계좌번호 (숫자만 입력)">
+					</em>
+				</li>
+				<li class="btn">
+					<em>
+						<var class="confirm" onClick="member_complete();">가입하기</var>
+						<var onClick="member_cancel();">취소</var>
+					</em>
+				</li>
+				<li>
+					<span><code>CS CENTER</code></span>
+					<em>
+						<ol>
+							<li>
+								<img src="/_go/renewal/img/login/icon_kakaotalk.png">
+								<label>gobet01</label>
+							</li>
+							<li>
+								<img src="/_go/renewal/img/login/icon_telegram.png">
+								<label>gobet01</label>
+							</li>
+						</ol>
+					</em>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="complete_area">
+		<div class="complete_line top"></div>
+		<div class="complete_line bottom"></div>
+		<div class="complete_box">
+			<h1><img src="/_go/renewal/img/top_logo.png"></h1>
+			<!--<h2><img src="/_go/renewal/img/login/text_title_word.png"></h2>-->
+			<h3>축하합니다! 회원가입이 완료되었습니다.</h3>
+			<h4>
+				관리자 승인 후 로그인 하시면 정상적으로 서비스 이용이 가능합니다.<BR />
+				고벳은 깨끗하고 안전한 운영을 자랑합니다.
+			</h4>
+			<ul>
+				<li>
+					<img src="/_go/renewal/img/login/icon_complete1.png"><BR />
+					<span>회원님의 모든데이터는<BR />암호화 되어 안전하게<BR />보관됩니다.</span>
+				</li>
+				<li>
+					<img src="/_go/renewal/img/login/icon_complete2.png"><BR />
+					<span>아이디/비밀번호를<BR />분실되지 않도록<BR />보안에 신경써주십시오.</span>
+				</li>
+				<li>
+					<img src="/_go/renewal/img/login/icon_complete3.png"><BR />
+					<span>회원탈퇴 후<BR />회원님의 정보는<BR />완전히 삭제됩니다.</span>
+				</li>
+			</ul>
+			<h5>
+				<span class="main" onClick="member_cancel();">LOGIN</span>
+			</h5>
+		</div>
+	</div>
+
+</div> <!-- fullpage_wrap -->
+
+<script>
+$(document).ready(function(){
+    $("body").height($(window).height());
+    $('.umMovie').height($(window).height());
+	video_resize();
+});
+
+
+setTimeout(function(){
+	$(".login_line").addClass("active");
+},1000);
+setTimeout(function(){
+	$(".login_box").addClass("active");
+},2000);
+
+function member_join(){
+	$(".login_line").removeClass("active");
+	$(".login_box").removeClass("active");
+	setTimeout(function(){
+		$(".login_box").hide();
+		$(".join_area").show();
+	},2000);
+	setTimeout(function(){
+		$(".join_line").addClass("active");
+		$(".join_box").addClass("active");
+	},2200);
+}
+
+function member_cancel(){
+	if(!$(".login_box").hasClass("active")){
+		$(".complete_line").removeClass("active");
+		$(".complete_box").removeClass("active");
+		$(".join_line").removeClass("active");
+		$(".join_box").removeClass("active");
+		setTimeout(function(){
+			$(".complete_area").hide();
+			$(".join_area").hide();
+			$(".login_box").show();
+		},2000);
+		setTimeout(function(){
+			$(".login_line").addClass("active");
+			$(".login_box").addClass("active");
+		},2200);
+	}
+
+}
+
+function member_complete(){
+	$(".join_line").removeClass("active");
+	$(".join_box").removeClass("active");
+	setTimeout(function(){
+		$(".join_area").hide();
+		$(".complete_area").show();
+	},2000);
+	setTimeout(function(){
+		$(".complete_line").addClass("active");
+		$(".complete_box").addClass("active");
+	},2200);
+}
+
+
+</script>
+
+</body>
+</html>

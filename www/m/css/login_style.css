@@ -1,0 +1,136 @@
+@charset "utf-8"; 
+
+/* mobile - CSS reset */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+address, big, cite, code, del, dfn, em, font, img, ins, 
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
+u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:none 0; font-family:Helvetica, Apple-Gothic, Droid Sans, sans-serif, Dotum, Tahoma}
+html, body {width:100%; height:100%}
+body, input, button, textarea {font-size:14px; font-family:Helvetica, Apple-Gothic, Droid Sans, sans-serif, Dotum, Tahoma; color:#cacaca;}
+h1, h2, h3, h4, h5, h6 {text-align:left; font-size:14px}
+img, fieldset, iframe {border:0 none; width:100%}
+table, div {border-collapse: collapse}
+select, textarea {border:1px solid #B7B6B6; background:#FFFFFF; color:#cacaca; font-size:0.75em; vertical-align:middle; outline-style:none}
+textarea {overflow:auto}
+select, input[type=text], input[type=password], input[type=submit], img, li {vertical-align:middle; -webkit-appearance:none; border-radius:0px}
+input {*-webkit-appearance:none; outline-style:none}
+address, caption, cite, code, dfn, em, th, var {font-style:normal; font-weight:normal}
+ul, li, ol {list-style-type:none}
+legend, caption {display:none}
+hr {border-collapse:collapse; display:none}
+a { text-decoration:none; cursor:pointer; color:#cacaca}
+img {width:100%}
+html {background:#000}
+body {-webkit-text-size-adjust:none}
+body:before {content: ""; display: block;  position:fixed; width:100%; height:100%; left:0; top:0;  background:url('/_go/mobile/img/login_bg.jpg') no-repeat; background-size:cover; z-index: -10;}
+
+/* LOGIN */
+.login_wrap {width:100%; margin-top:5em; text-align:center}
+.login_wrap > em {display:block; width:11em; margin:0 auto}
+.login_wrap > span {display:block; width:15em; margin:0 auto 1em}
+.login_wrap > div {margin-bottom:0.5em}
+
+.login_menu {width:63%; margin:2em auto; overflow:hidden}
+.login_menu > li {float:left; width:50%; color:#b2b2b2; font-size:1.1em; text-align:center; padding-bottom:1em; border-bottom:1px solid #6f746c;}
+.login_menu > li.on {border-bottom:1.5px solid #628935; }
+.login_menu > li > a {display:block;}
+.login_menu > li.on > a {color:#80b741}
+
+.style_input {background:rgba(255,255,255,0.05) !important; border:0.15em solid rgba(255,255,255,0.05); width:63%; padding:0.7em 0; border-radius:0.8em !important; text-align:center; color:#afafaf; transition:.3s}
+.style_input.essential {background:rgba(255,255,255,0.05) !important; border:0.15em solid rgba(255,255,255,0.05)}
+.style_input::placeholder {text-align:center; color:#FFF}
+.style_input:focus {color:#FFF; border:0.15em solid #9d9d9d}
+
+.btn_submit {background:transparent; border:0.15em solid #80b741; border-radius:0.8em !important; width:63%; padding:0.7em 0; text-align:center !important; color:#80b741; margin-top:1em}
+.btn_join {-webkit-appearance:none; border:0.15em solid #a9a9a9 !important; background:none; !important; border-radius:0.8em !important; width:63%; padding:0.7em 0; text-align:center !important;  color:#a9a9a9}
+
+.copy {width:100%; margin-top:10em; text-align:center; font-size:0.66em; color:rgba(255,255,255,0.4)}
+.copy > span {margin:0 1em; font-size:1.5em; color:#FFF}
+.copy > span > img {width:2em; margin-right:0.3em}
+.copy > h1 {margin:1em 0 2em; text-align:center; font-size:1.2em; color:#9a9a9a}
+.copy > h1 > span {padding:1em 2em; background:rgba(0,0,0,0.25); border:1px solid #515151}
+
+.paging {position:absolute; left:0; top:3em; width:100%}
+.paging > dl {display:table; width:60%; margin:0 auto}
+.paging > dl > dt {display:table-cell; width:2em; height:2em; background:url('/_go/mobile/img/paging_bg.png') no-repeat center; background-size:2em 2em}
+.paging > dl > dt.on {background:url('/_go/mobile/img/paging_on_bg.png') no-repeat center; background-size:2em 2em}
+.paging > dl > dd {display:table-cell; width:5em; height:2em; vertical-align:middle; text-align:center}
+.paging > dl > dd > B {display:block; width:3em; height:0.08em; margin:0 1em; background:#999}
+
+.login_foot {position:fixed; width:100%; text-align:center; bottom:1em}
+.login_foot > .telegram {margin-bottom:0.5em}
+.login_foot > .telegram > em {display:inline-block; width:2em; margin-right:0.5em}
+.login_foot > .telegram > span {display:inline-block; color:#fff}
+.login_foot > .text1 {font-size:0.7em; color:#909394}
+.login_foot > h1 {margin:2em 0 2em; text-align:center; font-size:0.8em; color:#9a9a9a}
+.login_foot > h1 > span {padding:1em 2em; background:rgba(0,0,0,0.25); border:1px solid #515151}
+
+/* REGISTER */
+.btn_button {display:inline-block; background:rgba(152,152,152,0.2); border-radius:1.5em !important; width:4em; padding:1em 0; text-align:center !important; border:0.2em solid rgba(152,152,152,0.2) !important; color:#CCC; box-sizing:border-box; vertical-align:middle}
+.style_select {font-size:1em; background:rgba(255,255,255,0.05) !important; border:0.15em solid rgba(255,255,255,0.05); color:#afafaf; padding:0.7em; border-radius:0.8em !important; box-sizing:border-box}
+.style_select.essential {background:rgba(0,0,0,0.2) !important; border:0.2em solid rgba(70,174,145,0.5)}
+.style_select.type1 {width:8.6em;}
+.style_select.type2 {width:6em;}
+.style_select.type3 {width:4.3em;}
+.style_select option {background:rgba(0,0,0,1)}
+.sub_board_btn {text-align:center; margin-bottom:1.5em}
+.sub_board_btn > a {padding:0.6em 1.5em; background:transparent; border:1px solid #80b741; color:#80b741; border-radius:0.8em; margin:0 0.3em}
+.sub_board_btn > a.btn_gray {background:transparent; border:1px solid #999; color:#999}
+
+.join_wrap .style_input {width:20em}
+.join_wrap .style_input.type2 {width:15.6em}
+.join_wrap .style_input.host {width:7em; margin-left:1em}
+
+.join_wrap .style_select {width:20em}
+.join_wrap .style_select.type1 {width:11.6em;}
+.join_wrap .style_select.type2 {width:8em;}
+.join_wrap .style_select.type3 {width:5.6em;}
+
+
+.join_wrap {position:relative; z-index:99}
+.join_wrap > h1 {display:block; text-align:center; margin:0 auto 1em}
+.join_wrap > h1 > * {display:block}
+.join_wrap > h1 > em {font-size:1.5em; font-weight:100; color:#FFF}
+.join_wrap > h1 > span {font-size:0.7em; color:#7999b9; font-weight:100; font-style:italic}
+.join_wrap > h1 > var {height:1px; width:5em; margin:0.5em auto; background:#7999b9}
+.join_wrap > h1 > code {font-size:0.8em; color:#25ab87}
+.join_wrap > div {text-align:center; margin-bottom:0.6em}
+.join_wrap > div > div {overflow:hidden; text-align:center}
+.join_wrap > div > span {font-size:0.8em; color:#47abff }
+
+.join_wrap {position:absolute; left:0; top:5em; width:100%; text-align:center}
+.join_wrap > em {display:block; width:11em; margin:0 auto}
+.join_wrap > span {display:block; width:15em; margin:0 auto 1em}
+.join_wrap > div {margin-bottom:0.5em}
+
+.join_wrap > div.join_acc { padding:0em 0 1em 0; b text-align:center}
+.join_wrap > div.join_acc > em {display:inline-block; font-size:1.15em; margin-bottom:0.5em; color:#47abff }
+.join_wrap > div.join_acc > div {margin-bottom:0.5em}
+
+.join_wrap > div > div > em {display:inline-block;}
+.join_wrap > div > div > em.captcha {width:4em; vertical-align:middle; color:#fff; border:1px solid #999; box-sizing:border-box}
+.join_wrap > div > div > em > input {width:6em}
+
+.join_wrap > fieldset {display:block; text-align:center; margin-bottom:2em}
+.join_wrap > fieldset > em {display:inline-block; width:1.5em}
+.join_wrap > fieldset > span {font-weight:100; color:#FFF}
+
+.login_wrap.ok {*top:0}
+
+.joinok_wrap {display:block; text-align:center; margin-bottom:1.5em;}
+.joinok_wrap > em {display:block; font-weight:100; color:#FFF; font-size:1.2em; margin-bottom:0.3em}
+.joinok_wrap > label {display:block; font-weight:100; color:#80b741; font-size:0.8em; margin-bottom:1.5em}
+.joinok_wrap > div {font-size:0.9em; font-weight:100; color:#888; margin-bottom:0.3em}
+.joinok_wrap > div > span {display:inline-block;; font-size:1.2em; color:#FFF; margin-right:0.5em}
+
+.join_wrap input[type=checkbox] {display:none}
+.join_wrap input[type=checkbox]+label {display:inline-block; padding-left:1.8em; background:url("/_go/mobile/img/icon_check_box.png") no-repeat 0.5em center; background-size:1.2em}
+.join_wrap input[type=checkbox]:checked+label { background:url("/_go/mobile/img/icon_check_box_on.png") no-repeat 0.5em center; background-size:1.2em}
+
+.join_foot { text-align:center; padding:3em 0 1em !important}
+.join_foot > .telegram {margin-bottom:0.5em}
+.join_foot > .telegram > em {display:inline-block; width:2em; margin-right:0.5em}
+.join_foot > .telegram > span {display:inline-block; color:#fff}
+.join_foot > .text1 {font-size:0.7em; color:#909394}
+.join_foot > h1 {margin:2em 0 2em; text-align:center; font-size:0.8em; color:#9a9a9a}
+.join_foot > h1 > span {padding:1em 2em; background:rgba(0,0,0,0.25); border:1px solid #515151}

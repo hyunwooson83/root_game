@@ -1,0 +1,940 @@
+<?php
+$pstyle = "game";
+include_once('../sub_header.html');
+include_once('./mini_header.html');
+?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(6)").addClass('active');
+	$(".mini_head ul > li:nth-child(3)").addClass('on');
+});
+</script>
+
+<div id="mini_boxwrap">
+
+	<div id="mini_box_right">
+
+		<div class="mini_gamemovie">
+			<div class="power_ladder">
+				<iframe src="http://ntry.com/scores/speedkeno/main.php"  scrolling="no" ></iframe>
+			</div>
+		</div>
+
+		<ul class="mini_bettingbtn">
+			<li class="w3 ">
+				<div class="timer_box">
+					<h1>06월 14일 <font>[318회차]</font></h1>
+					<h2>10:34:56</h2>
+					<h3>01:04</h3>
+					<em onClick="location.reload();">새로고침</em>
+				</div>
+			</li>
+			<li class="btn3">
+				<dl>
+					<dd class="active">
+						<label><img src="/_go/renewal/img/mini_btn_odd.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_even.png" style="height:40px" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+				</dl>
+				<em>게임 1</em>
+				<span>홀/짝</span>
+			</li>
+			<li class="btn3 last">
+				<dl>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_under.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+					<dd>
+						<label><img src="/_go/renewal/img/mini_btn_over.png" /></label>
+						<dfn>1.97</dfn>
+					</dd>
+				</dl>
+				<em>게임 2</em>
+				<span>언더/오버</span>
+			</li>
+		</ul>
+
+		<dl class="mini_bettingslip">
+			<dt>
+				<div>
+					<em>게임분류</em>
+					<span class="f_yellow">스피드키노</span>
+				</div>
+				<div>
+					<em>게임선택</em>
+					<var class="bet_circle">
+						<h1 class="blue">홀</h1>
+					</var>
+				</div>
+				<div>
+					<em>배당률</em>
+					<span>3.80</span>
+				</div>
+			</dt>
+			<dd>
+				<div class="bet_input_wrap">
+					<div class="title">베팅금액입력</div>	
+					<div class="bet_input1">
+						<div>
+							<span>베팅금액</span>
+							<input type="text" class="bet_text1" value="5,000">
+						</div>
+						<span>5,000</span>
+						<span>10,000</span>
+						<span>50,000</span>
+					</div>
+					<div class="bet_input1">
+						<div>
+							<span>적중금액</span>
+							<input type="text" class="bet_text1 red" value="5,000">
+						</div>
+						<span>100,000</span>
+						<span>500,000</span>
+						<span>1,000,000</span>
+					</div>
+					<div class="bet_input2">
+						<span>잔돈</span>
+						<span class="reset">초기화</span>
+						<div>
+							<div class="self">
+								<span>직접입력</span>
+							</div>
+							<input type="text" class="bet_text2" value="5,000">
+						</div>
+					</div>
+					<input type="button" value="베팅하기" class="bet_action">
+				</div>
+			</dd>
+		</dl>
+
+		<div class="mini_table">
+			<h2>최근 회차별 통계</h2>
+			<ul>
+				<li id="mini_table01" class="active" onClick="hislist(1);">숫자합 홀짝</li>
+				<li id="mini_table02" onClick="hislist(2);">숫자합 마지막자리 언오버</li>
+			</ul>
+
+			<div class="history_list">
+		
+				<!-- kinospeed list #1 { -->
+				<div id="history_area1">
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">72</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">73</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">74</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">75</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">76</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">77</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">78</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">79</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">80</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">81</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">82</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">83</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">84</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">85</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">86</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">87</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">88</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">89</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">90</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">91</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>홀</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>짝</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+				</div> <!-- history_area -->
+				<!-- } kinospeed list #1 -->
+
+				<!-- kinospeed list #2 { -->
+				<div id="history_area2">
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">72</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">73</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">74</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">75</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">76</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">77</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">78</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">79</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">80</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">81</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">82</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">83</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">84</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">85</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">86</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">87</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">88</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">89</h1>
+							</div>
+						</dd>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">90</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">91</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>언</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="blue">92</h1>
+							</div>
+						</dd>
+					</dl>
+					<dl>
+						<dt>오</dt>
+						<dd>
+							<div class="bet_circle">
+								<h1 class="red">93</h1>
+							</div>
+						</dd>
+					</dl>
+				</div> <!-- history_area -->
+				<!-- } kinospeed list #2 -->
+
+			</div> <!-- history_list -->
+		</div> <!-- mini_table -->
+
+	<script>
+	function hislist(idx) {
+		if(idx == 1) {
+
+			//회차별 통계
+			$history_num = 30; // 가로갯수 history_area1
+			$history_num2 = 10; // 세로갯수 history_area1
+
+			$("#mini_table02").removeClass('active');
+			$("#mini_table01").addClass('active');
+
+			$("#history_area2").hide();
+			$("#history_area1").show();
+
+			if ($history_num > 25) {
+				$("#history_area1").css("width",($history_num * 46) + "px");
+				$(".history_list").css("height",(($history_num2 * 45) + 62) + "px");
+			}
+
+		} else {
+
+			//회차별 통계
+			$history2_num = 30; // 가로갯수 history_area2
+			$history2_num2 = 6; // 세로갯수 history_area2
+
+			$("#mini_table01").removeClass('active');
+			$("#mini_table02").addClass('active');
+
+			$("#history_area1").hide();
+			$("#history_area2").show();
+
+			if ($history2_num > 25) {
+				$("#history_area2").css("width",($history2_num * 46) + "px");
+				$(".history_list").css("height",(($history2_num2 * 45) + 62) + "px");
+			}
+
+		}
+	}
+
+	$(document).ready(function(){
+		hislist(1);
+	});
+
+	</script>
+
+		<div class="mini_table">
+			<h2>베팅내역</h2>
+			<table>
+				<thead>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>번호</td>
+						<td>회차</td>
+						<td>베팅시간</td>
+						<td>게임분류</td>
+						<td>베팅내역</td>
+						<td>배당률</td>
+						<td>베팅금액</td>
+						<td>적중/손실</td>
+						<td>적중여부</td>
+					</tr>
+				</thead>
+				<tbody class="betting_history">
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>홀/짝</b></td>
+						<td><div><h1 class="blue">홀</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+9,850</td>
+						<td class="f_orange">적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>언더/오버</b></td>
+						<td><div><h1 class="red">오버</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td>미적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>홀/짝</b></td>
+						<td><div><h1 class="blue">홀</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+9,850</td>
+						<td class="f_orange">적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>언더/오버</b></td>
+						<td><div><h1 class="red">오</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td>미적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>홀/짝</b></td>
+						<td><div><h1 class="blue">홀</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">+9,850</td>
+						<td class="f_orange">적중</td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" /></td>
+						<td>39182</td>
+						<td>06월 10일<br /><b>[105회차]</b></td>
+						<td>06월 10일<br />08:42:07</td>
+						<td><b>언더/오버</b></td>
+						<td><div><h1 class="red">오</h1></div></td>
+						<td>1.97</td>
+						<td class="td_right">5,000</td>
+						<td class="td_right">-5,000</td>
+						<td>미적중</td>
+					</tr>
+				</tbody>
+			</table>
+			<h3>
+				<code class="gray">전체삭제</code>
+				<code class="gray">선택삭제</code>
+				<code onclick="location.href='/_go/renewal/mypage/betlist_mini_speedk.html'">전체 베팅내역</code>
+			</h3>
+		</div>
+
+		<dl class="mini_footinfo">
+			<dt>알아두세요!</dt>
+			<dd>· 나눔로또에서 제공하는 파워볼 기본으로 진행하는 게임입니다.</dd>
+			<dd>· 나눔로또 스피드키노는 5분에 한번씩 매 4분 40초, 9분 40초에 게임이 실행됩니다.</dd>
+			<dd>· 홀짝결과는 숫자 합의 마지막 숫자를 기준으로 하며, 언오버는 숫자 합의 마지막 숫자 4,5기준으로 판정합니다.</dd>
+			<dd>· 한번 베팅한 게임은 베팅취소 및 베팅수정이 불가합니다.</dd>
+			<dd>· 베팅은 본인의 보유 예치금 기준으로 베팅 가능하며, 추첨결과에 따라 명시된 배당률 기준으로 적립해드립니다.</dd>
+			<dd>· 부적절한 방법(ID도용, 불법프로그램, 시스템 베팅 등)으로 베팅을 할 경우 무효처리되며, 전액 몰수 / 강제탈퇴 등 불이익을 받을 수 있습니다.</dd>
+			<dd>· 모든 배당률은 당사의 운영정책에 따라 언제든지 상/하향 조정될 수 있습니다.</dd>
+		</dl>
+
+	</div> <!-- mini_box_right -->
+
+</div> <!-- mini_container -->
+
+
+<?php
+include_once('./mini_footer.html');
+include_once('../footer.html');
+?>

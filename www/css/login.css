@@ -1,0 +1,139 @@
+@charset "utf-8";
+@import url( "http://fonts.googleapis.com/earlyaccess/notosanskr.css" );
+
+/* RESET */
+::selection {background:#568300; color:#FFF}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+address, big, cite, code, del, dfn, em, font, img, ins, 
+q, s, samp, small, strike, strong, sub, sup, tt, var, b, 
+u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:none 0; font-family:"Noto Sans KR"; *font-family:Helvetica, sans-serif, Arial, Noto Sans KR, Dotum; font-weight:400}
+h1, h2, h3, h4, h5, h6 {font-size:12px}
+img, fieldset, iframe {border:0 none}
+table, div {border-collapse: collapse; font-size:12px}
+textarea {overflow:auto; outline-style:none; font-family:"Noto Sans KR"; *font-family:Helvetica, sans-serif, Arial, Noto Sans KR, Dotum}
+select, input, img, li {vertical-align:middle; text-align:left; font-size:12px; font-family:"Noto Sans KR"; *font-family:Helvetica, sans-serif, Arial, Noto Sans KR, Dotum; font-weight:400; outline-style:none}
+address, caption, cite, code, dfn, em, th, var {font-style:normal; font-weight:400}
+ul, li, ol {list-style-type:none}
+legend, caption {display:none}
+hr {border-collapse:collapse; display:none}
+a { text-decoration:none; cursor:pointer; color:#c7c7c7}
+html, body {width:100%; height:100%; font-size:12px; color:#c7c7c7; background:#141414}
+* {font-family:"Noto Sans KR"; *font-family:Helvetica, sans-serif, Arial, Noto Sans KR, Dotum}
+
+body {animation:jojofade .7s ease-out none;-webkit-animation:jojofade .7s ease-out none}
+
+@keyframes jojofade {
+	from {opacity:0; filter:alpha(opacity=0)}
+	to {opacity:1; filter:alpha(opacity=100)}
+}
+@-webkit-keyframes jojofade {
+	from {opacity:0; filter:alpha(opacity=0)}
+	to {opacity:1; filter:alpha(opacity=100)}
+}
+
+#fullpage_wrap {position:relative; width:100%; height:100%; overflow:hidden}
+	.video_bg {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:100%; height:100%; overflow:hidden}
+		.umMovie {visibility:visible; margin:auto; min-width:100%; min-height:100%}
+		.video_filter {position:absolute; left:0; top:0; width:100%; height:100%; background:url('../img/login/patten_login_bg.png') repeat}
+
+	.login_area {}
+		.login_line {position:absolute; left:50%; width:1px; height:0; margin-left:-0.5px; background:rgba(255, 255, 255, 0.3); transition:.5s height ease-out}
+		.login_line.top {top:0}
+		.login_line.bottom {bottom:0}
+		.login_line.active {height:50%; max-height:calc(50% - 235px)}
+		.login_box {position:absolute; left:50%; top:50%; width:600px; *height:262px; transform:translate(-50%,-50%); margin:0; overflow:auto}
+		.login_box > h1 {margin:-50px 0 40px; text-align:center; opacity:0; filter:alpha(oapcity=0); transition:.3s all ease-out}
+		.login_box.active > h1 {margin-top:0; opacity:1; filter:alpha(oapcity=100)}
+		.login_box > h2 {width:0; margin:0 auto 40px; text-align:center; overflow:hidden; opacity:0; filter:alpha(oapcity=0); transition:.5s all .3s ease-out}
+		.login_box.active > h2 {width:600px; opacity:1; filter:alpha(oapcity=100)}
+		.login_box > h3 {width:370px; margin:50px auto 10px; text-align:center; opacity:0; filter:alpha(opacity=0); transition:.5s all .5s ease-out}
+		.login_box > h3 > input {width:100%; padding:10px 0; text-align:center; font-weight:400; font-size:17px; color:rgba(255, 255, 255, 0.7); background:rgba(113, 113, 113, 0.25);  border:2px solid rgba(255,255,255,0.25); border-radius:10px; transition:.3s all ease-out}
+		.login_box > h3 > input::placeholder {font-weight:400; *font-style:italic}
+		.login_box > h3 > input:focus {color:rgba(255, 255, 255, 1); border:2px solid rgba(153,222,73,0.47)}
+		.login_box.active > h3 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}
+		.login_box > h4 {width:370px; margin:50px auto 20px; text-align:center; opacity:0; filter:alpha(opacity=0); transition:.5s all .5s ease-out}
+		.login_box > h4 > input {width:100%; padding:10px 0; text-align:center; font-weight:400; font-size:17px; color:rgba(255, 255, 255, 0.7); background:rgba(113, 113, 113, 0.25); border:2px solid rgba(255,255,255,0.25); border-radius:10px; transition:.3s all ease-out}
+		.login_box > h4 > input::placeholder {font-weight:400; *font-style:italic}
+		.login_box > h4 > input:focus {color:rgba(255, 255, 255, 1); border:2px solid rgba(153,222,73,0.47)}
+		.login_box.active > h4 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}
+		.login_box > h5 {margin-top:50px; text-align:center; opacity:0; filter:alpha(opacity=0); transition:.5s all 1.2s ease-out}
+		.login_box > h5 > span {display:inline-block; width:140px; padding:10px 0; font-weight:300; font-size:17px; border-radius:10px; cursor:pointer; opacity:0.7; filter:alpha(opacity=70); transition:.3s opacity ease-out}
+		.login_box > h5 > span:hover {opacity:1; filter:alpha(opacity=100)}
+		.login_box > h5 > span.join {color:#71aa33; border:2px solid #71aa33}
+		.login_box > h5 > span.login {color:#FFF; border:2px solid #FFF;  width:370px}
+		.login_box.active > h5 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}
+		ul.login_menu {width:450px; margin:-50px auto 40px; overflow:hidden; opacity:0}
+		.login_box.active > ul.login_menu {margin-top:0; opacity:1}
+		ul.login_menu > li {float:left; width:50%; color:#b2b2b2; font-size:18px; text-align:center; padding-bottom:12px; border-bottom:1px solid #606162; cursor:pointer}
+		ul.login_menu > li.on {border-bottom:2px solid #618a33; color:#80b741}
+
+
+
+	.join_area {display:none}
+		.join_line {position:absolute; left:50%; width:1px; height:0; margin-left:-0.5px; background:rgba(255, 255, 255, 0.3); transition:.5s height ease-out}
+		.join_line.top {top:0}
+		.join_line.bottom {bottom:0}
+		.join_line.active {height:50%; max-height:calc(50% - 456px)}
+		.join_box {position:absolute; left:50%; top:50%; width:800px; height:843px; transform:translate(-50%,-50%); margin:0; overflow:hidden; transition:0.2s opacity ease-out; opacity:0}
+		.join_box.active {opacity:1}
+		.join_box > h1 {margin:-50px 0 40px; text-align:center; opacity:0; filter:alpha(oapcity=0); transition:.3s all ease-out}
+		.join_box.active > h1 {margin-top:0; opacity:1; filter:alpha(oapcity=100)}
+		.join_box > h2 {width:0; margin:0 auto 40px; text-align:center; overflow:hidden; opacity:0; filter:alpha(oapcity=0); transition:.5s all .3s ease-out}
+		.join_box.active > h2 {width:600px; opacity:1; filter:alpha(oapcity=100)}
+		.join_box ul.login_menu { margin:-50px auto 40px;}
+		.join_box > ul {width:360px; margin:0 auto;}
+		.join_box > ul > li { overflow:hidden; text-align:Center}
+		.join_box > ul > li.gap {*margin-bottom:15px}
+		.join_box > ul > li.btn {margin:15px 0 20px}
+		.join_box > ul > li > span {text-align:Center;  width:130px; height:34px;  line-height:34px; overflow:hidden}
+		.join_box > ul > li > span > code {margin-top:50px; padding-right:20px; font-weight:400; font-size:16px; color:#d7d7d7; opacity:0; filter:alpha(opacity=0); transition:.5s all .8s ease-out;}
+		.join_box.active > ul > li > span > code {margin-top:0; opacity:1; filter:alpha(opacity=100)}
+		.join_box > ul > li > em {display:inline-block; width:360px; box-sizing:border-box; overflow:hidden; opacity:0; filter:alpha(opacity=0); transition:.5s all .8s ease-out}
+		.join_box.active > ul > li > em {opacity:1; filter:alpha(opacity=100); text-align:center}
+		.join_box > ul > li.btn > em {height:50px}
+		.join_box > ul > li.cs > em {height:40px; line-height:40px}
+		.join_box > ul > li > em > input {width:360px; box-sizing:border-box; margin-top:-50px; margin-bottom:5px; padding:7px 10px; font-size:17px; color:#FFF; background:rgba(113, 113, 113, 0.25); border:2px solid rgba(255,255,255,0.25); border-radius:5px; transition:.5s margin .8s ease-out; text-align:center}
+		.join_box.active > ul > li > em > input {margin-top:0;}
+		.join_box > ul > li > em > select.middle {float:left; width:160px; box-sizing:border-box; margin-top:-50px; height:43px; padding:0 10px; font-size:14px; color:#b2b2b2; background:rgba(113, 113, 113, 0.25); border:2px solid rgba(255,255,255,0.25); border-radius:5px; transition:.5s margin .8s ease-out}
+		.join_box > ul > li > em > select.middle option {background:#333;}
+		.join_box.active > ul > li > em > select.middle {margin-top:0px}
+		.join_box > ul > li > em > input.small {width:195px; margin-left:5px; text-align:left; padding-left:15px}
+		.join_box > ul > li > em > input::placeholder {color:#b2b2b2}
+		.join_box > ul > li > em > input:focus::placeholder {*color:#000}
+		.join_box > ul > li > em > input:focus { border:2px solid rgba(153,222,73,0.47)}
+		.join_box > ul > li > em > code {display:block; font-weight:500; font-size:12px; color:#b2b2b2; text-align:center; margin-bottom:8px;line-height:125%}
+		.join_box > ul > li > em > code.line2 {line-height:125%}
+		.join_box > ul > li > em > var {display:inline-block; width:170px; margin-top:5px; padding:7px 0; text-align:center; font-weight:400; font-size:16px; color:#d5d4d4; border:2px solid #d5d4d4; border-radius:8px; cursor:pointer; opacity:0.6; filter:alpha(opacity=60); transition:.3s opacity ease-out}
+		.join_box > ul > li > em > var:hover {opacity:1; filter:alpha(opacity=100)}
+		.join_box > ul > li > em > var.confirm {margin-right:9px; border:2px solid #fff; color:#fff; opacity:1}
+		.join_box > ul > li > em > ol {text-align:center}
+		.join_box > ul > li > em > ol > li {display:inline-block; margin:0 10px}
+		.join_box > ul > li > em > ol > li > img {}
+		.join_box > ul > li > em > ol > li > label {display:inline-block; height:34px; margin:0 15px 0 10px; font-weight:400; font-size:18px; color:#fefefe; line-height:34px}
+		.join_box.active > ul.login_menu {margin-top:0; opacity:1}
+
+
+	.complete_area {display:none}
+		.complete_line {position:absolute; left:50%; width:1px; height:0; margin-left:-0.5px; background:rgba(255, 255, 255, 0.3); transition:.5s height ease-out}
+		.complete_line.top {top:0}
+		.complete_line.bottom {bottom:0}
+		.complete_line.active {height:50%; max-height:calc(50% - 235px)}
+		.complete_box {position:absolute; left:50%; top:50%; width:600px; height:420px; margin:-210px 0 0 -300px; overflow:hidden}
+		.complete_box > h1 {margin:-50px 0 10px; text-align:center; opacity:0; filter:alpha(oapcity=0); transition:.3s all ease-out}
+		.complete_box.active > h1 {margin-top:0; opacity:1; filter:alpha(oapcity=100)}
+		.complete_box > h2 {width:0; margin:0 auto 20px; text-align:center; overflow:hidden; opacity:0; filter:alpha(oapcity=0); transition:.5s all .3s ease-out}
+		.complete_box.active > h2 {width:600px; opacity:1; filter:alpha(oapcity=100)}
+		.complete_box > h3 {margin:50px auto 10px; text-align:center; font-weight:100; font-size:27px; color:#FFF; opacity:0; filter:alpha(opacity=0); transition:.5s all .5s ease-out}
+		.complete_box.active > h3 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}
+		.complete_box > h4 {margin:50px auto 30px; text-align:center; font-weight:400; font-size:13px; color:#fbcd27; opacity:0; filter:alpha(opacity=0); transition:.5s all .5s ease-out}
+		.complete_box.active > h4 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}
+		.complete_box > ul {width:480px; height:125px; margin:0 auto 45px; overflow:hidden; opacity:0; filter:alpha(opacity=0); transition:.5s all .8s ease-out}
+		.complete_box.active > ul {opacity:1; filter:alpha(opacity=100)}
+		.complete_box > ul > li {float:left; width:160px; margin-left:250px; text-align:center; transition:.5s margin .8s ease-out}
+		.complete_box.active > ul > li {margin-left:0}
+		.complete_box > ul > li > span {display:inline-block; margin-top:15px; font-weight:400; font-size:13px; color:#cecece}
+		.complete_box > h5 {margin-top:50px; text-align:center; opacity:0; filter:alpha(opacity=0); transition:.5s all 1s ease-out}
+		.complete_box > h5 > span {display:inline-block; width:140px; padding:5px 0; font-weight:400; font-size:17px; border-radius:20px; cursor:pointer; opacity:0.7; filter:alpha(opacity=70); transition:.3s opacity ease-out}
+		.complete_box > h5 > span:hover {opacity:1; filter:alpha(opacity=100)}
+		.complete_box > h5 > span.main {color:#71aa33; border:2px solid #71aa33}
+		.complete_box.active > h5 {margin-top:0; text-align:center; opacity:1; filter:alpha(opacity=100)}

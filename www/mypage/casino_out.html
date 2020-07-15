@@ -1,0 +1,79 @@
+<?php include_once('../header.html'); ?>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>카지노머니 환전내역</span>
+			<em>CASINO MONEY EXCHANGE LIST</em>
+		</h1>
+		<ul class="sub_title_category">
+			<li onclick="location.href='/_go/renewal/mobile/mypage/casino_out.html'" class="active">환전하기</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/list_casino_out.html'">환전내역</li>
+		</ul>
+	</div>
+
+	<div class="sub_mypage_wrap">
+		<dl class="cash_caution">
+			<dt>필독사항</dt>
+			<dd><var>⊙</var><span class="strong">카지노 머니환전 시 회원님 의 보유머니로 전환(충전)됩니다.</span></dd>
+			<dd><var>⊙</var><span>자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</span></dd>
+		</dl>
+		<div class="sub_cash_box account_info">
+			<h1>
+				<span>카지노사이트 선택</span>
+			</h1>
+			<ul class="casino_site">
+				<li class="active"><img src="/_go/renewal/mobile/img/cash_site1.png" /></li>
+				<li><img src="/_go/renewal/mobile/img/cash_site2.png" /></li>
+				<li><img src="/_go/renewal/mobile/img/cash_site3.png" /></li>
+				<li><img src="/_go/renewal/mobile/img/cash_site4.png" /></li>
+				<li><img src="/_go/renewal/mobile/img/cash_site5.png" /></li>
+			</ul>
+		</div>
+		<div class="sub_cash_box">
+			<h1>
+				<span>환전금액 입력</span>
+			</h1>
+			<h2>
+				<div>
+					<span>신청금액선택</span>
+					<span><input type="text" value="150,000" /> 원</span>
+					<ul>
+						<li>1천</li>
+						<var></var>
+						<li>5천</li>
+						<var></var>
+						<li>1만</li>
+						<var></var>
+						<li>5만</li>
+						<var></var>
+						<li class="green">10만</li>
+						<var></var>
+						<li class="green">30만</li>
+						<var></var>
+						<li class="green">50만</li>
+						<var></var>
+						<li class="green">100만</li>
+						<var></var>
+						<li class="yellow">정정</li>
+					</ul>
+				</div>
+			</h2>
+		</div>
+		<BR>
+		<div class="cash_submit">
+			<div class="cash_submit_btn">카지노머니 환전 신청하기</div>
+		</div>
+	</div>
+
+</div>
+
+<script>
+$(".casino_site > li").click(function(){
+	$(".casino_site > li").removeClass("active");
+	$(this).addClass("active");
+});
+</script>
+
+<?php include_once('../footer.html'); ?>

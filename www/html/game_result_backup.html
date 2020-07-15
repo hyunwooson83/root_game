@@ -1,0 +1,204 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(8)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+<div class="sub_wrap type2">
+	<div class="sub_title">
+		<div class="title1">경기결과</div>
+		<div class="title2">GAME RESULT</div>
+	</div>
+	<div class="game_result_wrap">
+		<div class="result_s_choice">
+			<div class="title">
+				스포츠게임 결과
+				<ul>
+					<li onChange="location.href='/_go/renewal/game_result.html'">
+						<select>
+							<option>스포츠게임선택</option>
+							<option selected>축구</option>
+							<option>농구</option>
+							<option>야구</option>
+							<option>배구</option>
+							<option>테니스</option>
+							<option>하키</option>
+							<option>핸드볼</option>
+							<option>미식축구</option>
+							<option>e스포츠</option>
+						</select>
+					</li>
+					<li onChange="location.href='/_go/renewal/game_result_mini_pb.html'">
+						<select>
+							<option>미니게임선택</option>
+							<option>파워볼게임</option>
+							<option>파워사다리</option>
+							<option>스피드키노</option>
+							<option>키노사다리</option>
+						</select>
+					</li>
+					<li onChange="location.href='/_go/renewal/game_result_virtual.html'">
+						<select>
+							<option>가상게임선택</option>
+							<option>가상 축구 리그</option>
+							<option>가상 축구 컵</option>
+						</select>
+					</li>
+				</ul>
+			</div>
+			<ul class="result_s_list">
+				<li title="ALL" class="e1"></li>
+				<li title="축구" class="e2 on"></li>
+				<li title="농구" class="e3"></li>
+				<li title="야구" class="e4"></li>
+				<li title="배구" class="e5"></li>
+				<li title="테니스" class="e6"></li>
+				<li title="하키" class="e7"></li>
+				<li title="핸드볼" class="e8"></li>
+				<li title="미식축구" class="e9"></li>
+				<li title="E스포츠" class="e10"></li>
+			</ul>
+		</div>
+
+		<div class="result_search">
+			<div class="line1">
+				<span>리그선택</span>
+				<select class="input1">
+					<option>프리미어 리그</option>
+					<option>라리가</option>
+					<option>세리에A</option>
+					<option>분데스리가</option>
+				</select>
+				<span>팀명</span>
+				<input type="text" placeholder="텍스트검색"  class="input2">
+			</div>
+			<div class="line2">
+				<span>기간선택</span>
+				<input type="text" value="2017-03-13" class="input3"> ~ <input type="text" value="2017-03-13" class="input3">
+				<ul>
+					<li class="on">오늘</li>
+					<li>어제</li>
+					<li>1주일</li>
+					<li>15일</li>
+					<li>1개월</li>
+				</ul>
+			</div>
+			<input type="button" value="검색하기" class="input4">
+		</div>
+		<div class="result_list">
+			<div class="title">
+				<span>경기결과</span><var>|</var><em>축구</em>
+				<select>
+					<option>전체보기</option>
+					<option>전체보기</option>
+					<option>전체보기</option>
+					<option>전체보기</option>
+				</select>
+			</div> <!-- Live Betting Top -->			
+			<table class="result_list_table">
+				<thead>
+					<tr>
+						<td>종목</td>
+						<td>경기일시</td>
+						<td>리그</td>
+						<td>승(홈)</td>
+						<td>무</td>
+						<td>패(원정)</td>
+						<td>점수</td>
+						<td>상태</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="icon"><img src="/img/icon_soccer.png"></td>
+						<td class="date">02-30 21:40</td>
+						<td class="lg">프리미어리그</td>
+						<td class="bae">
+							<div class="on">
+								<span>유나이티드</span>
+								<em>3.20</em>
+							</div>
+						</td>
+						<td class="mu"><div>3.10</div></td>
+						<td class="bae">
+							<div>
+								<span>2.70</span>
+								<em>레알마드리드</em>
+							</div>
+						</td>
+						<td class="point">1 : 0</td>
+						<td class="state"><div class="on">경기중</div></td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="/img/icon_soccer.png"></td>
+						<td class="date">02-30 21:40</td>
+						<td class="lg">프리미어리그</td>
+						<td class="bae">
+							<div>
+								<span>유나이티드</span>
+								<em>3.20</em>
+							</div>
+						</td>
+						<td class="mu"><div class="on">3.10</div></td>
+						<td class="bae">
+							<div>
+								<span>2.70</span>
+								<em>레알마드리드</em>
+							</div>
+						</td>
+						<td class="point">1 : 0</td>
+						<td class="state"><div>종료</div></td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="/img/icon_soccer.png"></td>
+						<td class="date">02-30 21:40</td>
+						<td class="lg">프리미어리그</td>
+						<td class="bae">
+							<div>
+								<span>유나이티드</span>
+								<em>3.20</em>
+							</div>
+						</td>
+						<td class="mu"><div>3.10</div></td>
+						<td class="bae">
+							<div class="on">
+								<span>2.70</span>
+								<em>레알마드리드</em>
+							</div>
+						</td>
+						<td class="point">1 : 0</td>
+						<td class="state"><div class="on">경기중</div></td>
+					</tr>
+					<tr>
+						<td class="icon"><img src="/img/icon_soccer.png"></td>
+						<td class="date">02-30 21:40</td>
+						<td class="lg">프리미어리그</td>
+						<td class="bae">
+							<div>
+								<span>유나이티드</span>
+								<em>3.20</em>
+							</div>
+						</td>
+						<td class="mu"><div>3.10</div></td>
+						<td class="bae">
+							<div class="on">
+								<span>2.70</span>
+								<em>레알마드리드</em>
+							</div>
+						</td>
+						<td class="point">1 : 0</td>
+						<td class="state"><div>종료</div></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="paging_box">
+				<a href="">◀</a><a href="">1</a><a href="" class="hit">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a><a href="">▶</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>
+
+<?php include_once('footer.html'); ?>

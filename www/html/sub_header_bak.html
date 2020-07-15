@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<link rel="shortcut icon" href="/_go/renewal/img/favicon.png">
+<title>GOBET</title>
+<link rel="stylesheet" href="/_go/renewal/css/gobet_style.css" />
+<link rel="stylesheet" href="/_go/renewal/css/swiper.min.css" />
+<link rel="stylesheet" href="/_go/renewal/css/slick-theme.css" />
+<link rel="stylesheet" href="/_go/renewal/css/slick.css" />
+<script src="/_go/renewal/js/jquery-1.11.1.min.js"></script>
+<script src="/_go/renewal/js/jquery.easing.1.3.js"></script>
+<script src="/_go/renewal/js/gobet_script.js"></script>
+<script src="/_go/renewal/js/placeholders.min.js"></script>
+<script src="/_go/renewal/js/swiper.min.js"></script>
+<script src="/_go/renewal/js/slick.min.js"></script>
+</head>
+
+<?php
+switch ($pstyle) {
+	case "casino" : $body_bg = "bg_casino"; $wrap_bg = "wrap_casino"; break;
+	case "game" : $body_bg = "bg_game"; $wrap_bg = "wrap_game";	break;
+	case "main" : $body_bg = "bg_main"; $wrap_bg = "wrap_main"; break;
+	default : $body_bg = "bg_main"; $wrap_bg = "wrap_sub"; break;
+}
+
+?>
+<body class="<?php echo $body_bg ?>">
+<div id="wrap" class="<?php echo $wrap_bg ?>">
+<div id="header" class="sub_header">
+	<div class="top1 center_wrap">
+		<span class="logo" onClick="location.href='/_go/renewal/gobet.html'"><img src="/_go/renewal/img/top_logo.png" /></span>
+		<div class="header_info">
+			<span>22:02:22 GMT +9</span>
+			<span class="name"><span class="f_green">Lv.1</span> 홍길동님</span>
+			<span>보유머니 <span class="f_yellow">10,000원</span> <em class="header_info_btn" onclick="location.href='/_go/renewal/cash_in_money.html'">충전</em></span>
+			<span>포인트 <span class="f_orange">0P</span> <em class="header_info_btn" onclick="location.href='/_go/renewal/point_exchange.html'">전환</em></span>
+			<span class="cp" onclick="location.href='/_go/renewal/mypage/member_info.html'">마이페이지</span>
+			<var>|</var>
+			<span class="cp" onclick="location.href='/_go/renewal/mypage/memo_list.html'">쪽지  <span class="f_orange2">0개</span></span>
+			<var>|</var>
+			<em class="header_info_btn"  onclick="location.href='/_go/renewal/login.html'">로그아웃</em>
+		</div>
+	</div>
+
+	<ul class="top2 center_wrap">
+		<li onClick="location.href='/_go/renewal/live_list.html'">라이브베팅</li>
+		<li onClick="location.href='/_go/renewal/cross_list.html'">크로스</li>
+		<li onClick="location.href='#'">스페셜</li>
+		<li onClick="location.href='#'">승무패</li>
+		<li onClick="location.href='#'">핸디캡</li>
+		<li onClick="location.href='#'">전반전</li>
+		<li onClick="location.href='/_go/renewal/evolution.html'">에볼루션카지노</li>
+		<li>
+			<span onclick="location.href='/_go/renewal/casino'">카지노게임</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/casino'">카지노메인</dd>
+				<dd onclick="location.href='/_go/renewal/casino/microgaming_intro.html'">마이크로</dd>
+				<dd onclick="location.href='/_go/renewal/casino/asiagaming_intro.html'">아시아게이밍</dd>
+				<dd onclick="location.href='/_go/renewal/casino/taishan_intro.html'">타이산</dd>
+				<dd onclick="location.href='/_go/renewal/casino/allbet_intro.html'">올벳</dd>
+				<dd onclick="location.href='/_go/renewal/casino/playtech_intro.html'">플레이텍</dd>
+				<dd onclick="location.href='/_go/renewal/casino/table_guide1.html'">테이블가이드</dd>
+				<dd onclick="location.href='/_go/renewal/casino/casino_rule.html'">카지노규정</dd>
+				<dd onclick="location.href='/_go/renewal/cash_in_casino.html'">카지노충전/환전</dd>
+			</dl>	
+		</li>
+		<li>
+			<span onclick="location.href='/_go/renewal/minigame/game_powerball.html'">미니게임</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/minigame/game_powerball.html'">파워볼게임</dd>
+				<dd onclick="location.href='/_go/renewal/minigame/game_powerball_ladder.html'">파워사다리</dd>
+				<dd onclick="location.href='/_go/renewal/minigame/game_kino_speed.html'">스피드키노</dd>
+				<dd onclick="location.href='/_go/renewal/minigame/game_kino_ladder.html'">키노사다리</dd>
+				<dd onclick="location.href='/_go/renewal/minigame/game_888_ladder.html'">방구차사다리</dd>
+				<dd onclick="location.href='/_go/renewal/minigame/game_888_dice.html'">주사위게임</dd>
+			</dl>	
+		</li>
+		<li onclick="alert('현재 준비중인 서비스입니다.')">가상게임</li>
+		<li onclick="location.href='/_go/renewal/live_streaming.html'">라이브영상</li>
+		<li>
+			<span onclick="location.href='/_go/renewal/cash_in_money.html'">충전</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/cash_in_money.html'">보유머니 충전</dd>
+				<dd onclick="location.href='/_go/renewal/cash_in_casino.html'">카지노머니 충전</dd>
+			</dl>			
+
+		</li>
+		<li>
+			<span onclick="location.href='/_go/renewal/cash_out_money.html'">환전</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/cash_out_money.html'">보유머니 환전</dd>
+				<dd onclick="location.href='/_go/renewal/cash_out_casino.html'">카지노머니 환전</dd>
+			</dl>			
+		</li>
+		<li>
+			<span onclick="location.href='/_go/renewal/mypage/betlist_sports.html'">베팅내역</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/mypage/betlist_sports.html'">스포츠북</dd>
+				<dd onclick="location.href='/_go/renewal/mypage/betlist_evolution.html'">에볼루션카지노</dd>
+				<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_powerb.html'">미니게임</dd>
+				<dd onclick="location.href='/_go/renewal/mypage/betlist_virtual.html'">가상게임</dd>
+			</dl>			
+		</li>
+		<li onClick="location.href='/_go/renewal/game_result.html'">경기결과</li>
+		<li onClick="location.href='/_go/renewal/board_list.html'">게시판</li>
+		<li >
+			<span onclick="location.href='/_go/renewal/qna_list.html'">고객센터</span>
+			<dl class="navi-sub">
+				<dd onclick="location.href='/_go/renewal/qna_list.html'">1:1문의</dd>
+				<dd onclick="location.href='/_go/renewal/faq_list.html'">자주묻는질문</dd>
+				<dd onclick="location.href='/_go/renewal/notice_list.html'">공지사항</dd>
+			</dl>			
+		</li>
+	</ul>
+	<div class="top3 header_top">
+		<div class="center_wrap">
+			<span class="top_notice">
+				<span class="nt"><em><img src="/_go/renewal/img/notice_icon1.png" /></em>긴급공지<var>|</var></span>
+				<div style="width:550px; height:18px; margin-top:2px"><code id="notice_slide" onclick="location.href='/_go/renewal/notice_view.html'" class="active">공지사항이 표시됩니다. 공지사항이 표시됩니다. 공지사항이 표시됩니다.</code></div>
+			</span>
+			<div class="top_select">
+				<div>
+					<span>스포츠게임선택</span>
+					<ul>
+						<li onclick="location.href='/_go/renewal/live_list.html'">라이브</li>
+						<li onclick="location.href='/_go/renewal/cross_list.html'">크로스</li>
+						<li onclick="location.href='/_go/renewal/live_list.html'">스페셜</li>
+						<li onclick="location.href='/_go/renewal/live_list.html'">승무패</li>
+						<li onclick="location.href='/_go/renewal/live_list.html'">핸디캡</li>
+						<li onclick="location.href='/_go/renewal/live_list.html'">전반전</li>
+					</ul>
+				</div>
+				<div>
+					<span>카지노게임선택</span>
+					<ul>
+						<li onclick="location.href='/_go/renewal/casino/microgaming_intro.html'">마이크로</li>
+						<li onclick="location.href='/_go/renewal/casino/asiagaming_intro.html'">아시아게이밍</li>
+						<li onclick="location.href='/_go/renewal/casino/taishan_intro.html'">타이산</li>		
+						<li onclick="location.href='/_go/renewal/casino/allbet_intro.html'">올벳</li>
+						<li onclick="location.href='/_go/renewal/casino/playtech_intro.html'">플레이텍</li>
+					</ul>
+				</div>
+				<div>
+					<span>미니게임선택</span>
+					<ul>
+						<li onclick="location.href='/_go/renewal/minigame/game_powerball.html'">파워볼게임</li>
+						<li onclick="location.href='/_go/renewal/minigame/game_powerball_ladder.html'">파워사다리</li>
+						<li onclick="location.href='/_go/renewal/minigame/game_kino_speed.html'">스피드키노</li>
+						<li onclick="location.href='/_go/renewal/minigame/game_kino_ladder.html'">키노사다리</li>
+						<li onclick="location.href='/_go/renewal/minigame/game_888_ladder.html'">방구차사다리</li>
+						<li onclick="location.href='/_go/renewal/minigame/game_888_dice.html'">주사위게임</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div> <!-- header -->
+
+<div id="body-contents">

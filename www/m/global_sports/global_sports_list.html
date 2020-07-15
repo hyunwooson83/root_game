@@ -1,0 +1,27 @@
+<div class="introduce_list_wrap casino">
+	<div  class="list_box">
+		<ul class="introduce_list">
+			<li onClick="location.href='/_cod/mobile/global_sports/sbobet.html'" data-num="1"><em><img src="/_cod/mobile/img/intro/int_sbobet.png"></em></li>
+			<li onClick="location.href='/_cod/mobile/global_sports/pinbet88.html'" data-num="2"><em><img src="/_cod/mobile/img/intro/int_pinbet88.png"></em></li>
+			<li onClick="location.href='/_cod/mobile/global_sports/maxbet.html'" data-num="3"><em><img src="/_cod/mobile/img/intro/int_maxbet.png"></em></li>
+			<li onClick="location.href='/_cod/mobile/global_sports/stag88.html'" data-num="4"><em><img src="/_cod/mobile/img/intro/int_stag8.png"></em></li>
+			<li onClick="location.href='/_cod/mobile/global_sports/1xbet.html'" data-num="5"><em><img src="/_cod/mobile/img/intro/int_1xbet.png"></em></li>
+		</ul>	
+		<ul class="introduce_list">
+			<li onClick="location.href='/_cod/mobile/global_sports/winner.html'" data-num="6"><em><img src="/_cod/mobile/img/intro/int_winner.png"></em></li>
+		</ul>
+	</div>
+	<div class="prev"><img src="/_cod/mobile/img/intro/slide_prev.png"></div>
+	<div class="next"><img src="/_cod/mobile/img/intro/slide_next.png"></div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+	$(".introduce_list > li").each(function(){
+		if( $(this).attr("data-num")==$("#sub_num").val() ){
+			$(this).children("em").addClass('on');
+		}
+	});
+});
+</script>

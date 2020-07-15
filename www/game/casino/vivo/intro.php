@@ -1,0 +1,1 @@
+<img src="/img/casino/about_allbet.png">

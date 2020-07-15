@@ -1,0 +1,89 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(13)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+<div class="sub_wrap type2">
+	<div class="sub_title">
+		<div class="title1">보유머니 환전</div>
+		<div class="title2">MONEY EXCHANGE</div>
+	</div>
+	<ul class="sub_menu">
+		<li class="on" onclick="location.href='/_go/renewal/cash_out_money.html'">보유머니 환전</li>
+		<li onclick="location.href='/_go/renewal/cash_out_casino.html'">카지노환전</li>
+		<li onclick="location.href='/_go/renewal/mypage/money_money_exchange.html'">보유머니 환전내역</li>
+		<li onclick="location.href='/_go/renewal/mypage/money_casino_exchange.html'">카지노 환전내역</li>
+	</ul>
+	<div class="sub_box money_box">
+		<div class="money_caution">
+			<h1><img src="/_go/renewal/img/img_caution.png" />필독사항</h1>
+			<ul>
+				<li class="point"><strong>⊙</strong> 환전 신청 시 현재 보유머니에서 차감되며, 회원님의 계좌번호로 입금됩니다.</li>
+				<li><strong>⊙</strong> 은행 점검시간을 확인하여 해당시간에는 입금이 지연될 수 있으니 점검시간을 피해 신청해 주시기 바랍니다.</li>
+				<li><strong>⊙</strong> 자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</li>
+			</ul>
+		</div>
+		<!--<ul class="money_con1">
+			<li>
+				<div class="text1">현재 보유머니</div>
+				<var></var>
+				<div class="text2">150,000원</div>
+			</li>
+			<li>
+				<div class="text1">환전 예정금액</div>
+				<var></var>
+				<div class="text2 t_green">50,000원</div>
+			</li>
+			<li>
+				<div class="text1">환전 후 보유머니</div>
+				<var></var>
+				<div class="text2">100,000원</div>
+			</li>
+		</ul>-->
+		<div class="money_con3">
+			<div class="money_title">
+				<span class="t_white">환전신청하기</span><var>|</var>환전완료 시 현재 보유머니에서 차감되며, 고객님의 계좌번호로 입금됩니다.
+			</div>
+			<div class="content">
+				<div class="con1">
+					<div>현재 보유머니<span class="t_green">150,000원</span></div>
+				</div>
+				<div class="money_choice">
+					<div class="left">신청금액선택</div>
+					<div class="right">
+						<div class="input">
+							<input type="text" class="i1" placeholder="직접입력"><span>원</span>
+						</div>
+						<div class="m_btn">
+							<span>1,000</span>
+							<span>5,000</span>
+							<span>10,000</span>
+							<span>50,000</span>
+							<span>100,000</span>
+							<span>300,000</span>
+							<span>500,000</span>
+							<span>1,000,000</span>
+							<span class="all">정정</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="money_btn_wrap">
+			<span>신청하기</span>
+		</div>
+		<div class="time_info">
+			<div class="text t_green">은행별 점검시간 안내<var>|</var><span>은행 점검 시간을 확인하신 후 충전 및 환전 신청 바랍니다.</span></div>
+			<div class="img"><img src="/_go/renewal/img/cash_notice_bank.png"></div>
+		</div>
+
+	</div>
+</div><!-- sub_wrap -->
+</div><!-- sub_bg -->
+
+ 
+
+<?php include_once('footer.html'); ?>

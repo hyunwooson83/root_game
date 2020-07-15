@@ -1,0 +1,62 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(11)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+	<div class="sub_wrap type2">
+		<div class="sub_title">
+			<div class="title1">1:1문의</div>
+			<div class="title2">GOBET Q&A</div>
+		</div>
+		<ul class="sub_menu">
+			<li class="on" onclick="location.href='/_go/renewal/qna_list.html'">1:1문의하기</li>
+			<li onclick="location.href='/_go/renewal/faq_list.html'">자주묻는 질문</li>
+			<li onclick="location.href='/_go/renewal/notice_list.html'">공지사항</li>
+		</ul>
+
+		<div class="board_wrap board2">
+			<div class="qna_view">
+				<div class="qna_title">
+					<div class="sub1">
+						<span>[스포츠북]</span><em>문의드립니다.</em>
+					</div>
+					<div class="sub2">
+						<span>홍길동</span><var></var><em>2016-07-07</em>
+					</div>
+				</div>
+				<div class="content">계좌문의드립니다.</div>
+				<div class="answer_box">
+					<div class="answer">
+						<div class="qna_title">
+							<div class="sub1">
+								<label>답변</label><em>답변드립니다.</em>
+							</div>
+							<div class="sub2">
+								<span>관리자</span><var></var><em>2016-07-07</em>
+							</div>						
+						</div>
+						<div class="answer_con">
+							배팅의 새로운 공간 , 최고 그 이상의『GOBET』입니다.<br>
+							회원님의 전용계좌는 '국민은행 GOBET 1234-12456-123456' 입니다.<br>
+							기타 문의 및 궁금하신 내용등은 다시 한번 저희 고객센터를 이용해주시기 바라며,<br>
+							앞으로도 많은 이용 부탁드립니다.<br>
+							항상 노력하는 GOBET 이 되겠습니다.<br>
+							감사합니다.
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="line_bottom"></div>
+			<div class="btn_wrap">
+				<a href="/_go/renewal/qna_list.html" class="bl">목록</a>
+				<a href="/_go/renewal/qna_write.html">문의등록</a>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+<?php include_once('footer.html'); ?>

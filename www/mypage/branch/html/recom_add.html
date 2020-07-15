@@ -1,0 +1,173 @@
+<?php include_once('../sub_header.html'); ?>
+
+<div class="sub_bg">
+	<div class="sub_wrap type2">
+		<div class="sub_title">
+			<div class="title1">나를추천한회원</div>
+			<div class="title2">RECOMMEND MEMBER</div>
+		</div>	
+		<div class="sub-box">
+
+			<div class="mypage_menu1">
+				<a href="/_go/renewal/mypage/betlist_sports.html">베팅내역</a>
+				<a href="/_go/renewal/mypage/money_money_charge.html">충전/환전내역</a>
+				<a href="/_go/renewal/point_exchange.html">포인트내역</a>
+				<a href="/_go/renewal/mypage/recom_main.html" class="active">총판관리</a>
+				<a href="/_go/renewal/mypage/coupon_use.html">쿠폰관리</a>
+				<a href="/_go/renewal/mypage/memo_list.html">쪽지관리</a>
+				<a href="/_go/renewal/mypage/member_confirm.html">회원정보수정</a>
+			</div>
+			<div class="mypage_menu2">
+				<a href="/_go/renewal/mypage/recom_main.html">총판현황</a>
+				<a href="/_go/renewal/mypage/recom_add.html" class="active">나를추천한회원</a>
+				<a href="/_go/renewal/mypage/recom_list.html">하부회원보기</a>
+				<a>승패보고서</a>
+				<a>승패정산보고서</a>
+				<a>정산내역</a>
+			</div>
+
+			<div class="board_wrap">
+				<div class="b_title1">
+					<span>애드워드</span>님의 <span>가입일</span>은 <span>2016년 12월 01일</span>이며, <span>현재요율</span>은 <em>0.5%</em>입니다.
+				</div>
+				<ul class="recom_state">
+					<li>
+						<div class="text1">추천회원수</div>
+						<var></var>
+						<div class="text2">5명</div>
+					</li>
+					<li>
+						<div class="text1">나의요율</div>
+						<var></var>
+						<div class="text2">0.5%</div>
+					</li>
+					<li>
+						<div class="text1">나의요율(실시간)</div>
+						<var></var>
+						<div class="text2">0.5%</div>
+					</li>
+					<li>
+						<div class="text1">처리완료</div>
+						<var></var>
+						<div class="text2">3건</div>
+					</li>
+					<li>
+						<div class="text1">미처리</div>
+						<var></var>
+						<div class="text2">2건</div>
+					</li>
+				</ul>
+				<div class="b_title2">
+					<span>추천회원현황</span> | 해당 회원의 요율을 설정할 수 있습니다.
+				</div>				
+
+				<table class="table-black big">
+					<thead>
+						<tr>
+							<td>번호</td>
+							<td width="14%">추천 회원아이디</td>
+							<td width="14%">닉네임</td>
+							<td width="11%">지급요율</td>
+							<td width="11%">지급요율(실시간)</td>
+							<td>회원가입일시</td>
+							<td>마지막로그인</td>
+							<td>처리상태</td>
+							<td>요율설정</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>5</td>
+							<td>red1</td>
+							<td>레드</td>
+							<td><font class="mypage-grnfont">0.25%</font></td>
+							<td><font class="mypage-orgfont">0.25%</font></td>
+							<td>2016-12-11 18:00</td>
+							<td>2016-12-11 18:00</td>
+							<td><font class="mypage-redfont">완료</font></td>
+							<td onClick="$('#recom_pop_bg').show();$('#recom_pop').show();"><em class="set">설정하기</em></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>blue1</td>
+							<td>블루</td>
+							<td><font class="mypage-grnfont">-</font></td>
+							<td><font class="mypage-orgfont">-</font></td>
+							<td>2016-12-11 18:00</td>
+							<td>2016-12-11 18:00</td>
+							<td><font class="mypage-grnfont">대기</font></td>
+							<td onClick="$('#recom_pop_bg').show();$('#recom_pop').show();"><em class="set">설정하기</em></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>black1</td>
+							<td>블랙</td>
+							<td><font class="mypage-grnfont">-</font></td>
+							<td><font class="mypage-orgfont">-</font></td>
+							<td>2016-12-11 18:00</td>
+							<td>2016-12-11 18:00</td>
+							<td><font class="mypage-grnfont">대기</font></td>
+							<td onClick="$('#recom_pop_bg').show();$('#recom_pop').show();"><em class="set">설정하기</em></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>orange1</td>
+							<td>오렌지</td>
+							<td><font class="mypage-grnfont">0.25%</font></td>
+							<td><font class="mypage-orgfont">0.25%</font></td>
+							<td>2016-12-11 18:00</td>
+							<td>2016-12-11 18:00</td>
+							<td><font class="mypage-redfont">완료</font></td>
+							<td onClick="$('#recom_pop_bg').show();$('#recom_pop').show();"><em class="set">설정하기</em></td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>white1</td>
+							<td>화이트</td>
+							<td><font class="mypage-grnfont">0.25%</font></td>
+							<td><font class="mypage-orgfont">0.25%</font></td>
+							<td>2016-12-11 18:00</td>
+							<td>2016-12-11 18:00</td>
+							<td><font class="mypage-redfont">완료</font></td>
+							<td onClick="$('#recom_pop_bg').show();$('#recom_pop').show();"><em class="set">설정하기</em></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div id="recom_pop_bg"></div>
+				<div id="recom_pop">
+					<h1>요율 설정하기</h1>
+					<div class="recom_popbody">
+						<h2>회원정보</h2>
+						<ul>
+							<li>ㆍ회원아이디 : blue1</li>
+							<li>ㆍ닉네임 : 블루</li>
+							<li>ㆍ가입일시 : 2016-12-11 18:00</li>
+							<li>ㆍ처리상태 : <font>대기</font></li>
+						</ul>
+						<h2>요율설정</h2>
+						<span>
+							<select>
+								<option>0.25%</option>
+								<option>0.30%</option>
+								<option>0.35%</option>
+							</select>
+						</span>
+					</div>
+					<div>
+						<a class="confirm" onClick="$('#recom_pop_bg').hide();$('#recom_pop').hide();">확인</a>
+						<a class="cancel" onClick="$('#recom_pop_bg').hide();$('#recom_pop').hide();">취소</a>
+					</div>
+				</div> <!-- 회원별 요율설정 팝업 -->
+
+			</div> <!-- board_wrap -->
+			<div class="paging_box">
+				<a href="">◀</a><a href="">1</a><a href="" class="hit">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a><a href="">▶</a>
+			</div>
+		</div> <!-- sub-box -->
+
+	</div> <!-- sub_wrap -->
+
+</div> <!-- sub_bg -->
+
+<?php include_once('../footer.html'); ?>

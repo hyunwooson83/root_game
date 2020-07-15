@@ -1,0 +1,105 @@
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 446619||2020-07-15 11:30:00||Full||WDL||필라델피아 유니온||Inter Miami CF||2.37||3.62||2.75||6046||156
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 450611||2020-07-15 17:00:00||Full||WDL||MTK 부다페스트||III. Keruleti TVE||1.28||5.27||7.37||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 451353||2020-07-15 18:00:00||Full||WDL||Vac FC||부다오르시 SC||3.95||3.85||1.7||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 447480||2020-07-15 19:00:00||Full||WDL||기라반즈 키타큐슈||교토 상가 FC||3.87||3.35||1.98||6046||35377
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 1||2020-07-15 08:30:31||Full||WDL||3폴더 보너스||배팅금지||1.03||||999||10000001||38337
+회원번호 : 2 아이디 : phpprogram- 구매내역 : 구매번호 : 4740경기갯수 : 5총배당률 : 10.51배팅금액 : 10000보유금액 : 87256480당첨금액 : 105100구매일자 : Await배팅구분 : prematch브라우저 : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+회원번호 : 2 아이디 : phpprogram- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 2, MI_Type        = 'MemberBetCancel', BG_Key         = 4740, MI_Money       = 10000, MI_Prev_Money  = 87246480, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 2 아이디 : phpprogram- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 2
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 446540||2020-07-15 09:00:00||Full||WDL||올랜도 시티||뉴욕 시티||3.21||3.51||2.15||6046||156
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 451141||2020-07-15 10:00:00||Full||WDL||레온||후아레스||1.47||4.17||5.47||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 446619||2020-07-15 11:30:00||Full||WDL||필라델피아 유니온||Inter Miami CF||2.36||3.65||2.75||6046||156
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 1||2020-07-15 08:34:48||Full||WDL||3폴더 보너스||배팅금지||1.03||||999||10000001||38337
+회원번호 : 2 아이디 : phpprogram- 구매내역 : 구매번호 : 4742경기갯수 : 4총배당률 : 8.95배팅금액 : 10000보유금액 : 87256480당첨금액 : 89500구매일자 : Await배팅구분 : prematch브라우저 : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+회원번호 : 2 아이디 : phpprogram- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 2, MI_Type        = 'MemberBetCancel', BG_Key         = 4742, MI_Money       = 10000, MI_Prev_Money  = 87246480, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 2 아이디 : phpprogram- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 2
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 447472||2020-07-15 19:00:00||Full||WDL||FC 류큐||V-바렌 나가사키||4.07||3.85||1.8||6046||35377
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 451177||2020-07-15 22:00:00||Full||WDL||L. 미쿨라스||Oravske Vesele||1.29||5.32||6.97||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 450743||2020-07-15 23:00:00||Full||WDL||시오포크||기르모트 SE||2.4||3.45||2.54||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 1||2020-07-15 08:36:38||Full||WDL||3폴더 보너스||배팅금지||1.03||||999||10000001||38337
+회원번호 : 2 아이디 : phpprogram- 구매내역 : 구매번호 : 4743 / 경기갯수 : 4 / 총배당률 : 6.07 / 배팅금액 : 10000 / 보유금액 : 87256480 / 당첨금액 : 60700 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+회원번호 : 2 아이디 : phpprogram- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 2, MI_Type        = 'MemberBetCancel', BG_Key         = 4743, MI_Money       = 10000, MI_Prev_Money  = 87246480, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 2 아이디 : phpprogram- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 2
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 450611||2020-07-15 17:00:00||Full||WDL||MTK 부다페스트||III. Keruleti TVE||1.28||5.27||7.37||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 451353||2020-07-15 18:00:00||Full||WDL||Vac FC||부다오르시 SC||3.95||3.85||1.7||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 447480||2020-07-15 19:00:00||Full||WDL||기라반즈 키타큐슈||교토 상가 FC||3.87||3.35||1.98||6046||35377
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 447476||2020-07-15 19:00:00||Full||WDL||도쿠시마 보르티스||레노파 야마구치 FC||1.67||4.12||4.52||6046||35377
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 447482||2020-07-15 19:00:00||Full||WDL||몬테디오 야마가타||자스파구사쓰 군마||1.53||4.02||6.17||6046||35377
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 2||2020-07-15 08:41:17||Full||WDL||4폴더 보너스||배팅금지||1.05||||1||10000001||38337
+회원번호 : 2 아이디 : phpprogram- 구매내역 : 구매번호 : 4744 / 경기갯수 : 6 / 총배당률 : 11.55 / 배팅금액 : 60000 / 보유금액 : 87256480 / 당첨금액 : 693000 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 2 아이디 : phpprogram- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 2, MI_Type        = 'MemberBetCancel', BG_Key         = 4744, MI_Money       = 60000, MI_Prev_Money  = 87196480, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 2 아이디 : phpprogram- 머니지급 : UPDATE members SET M_Money = M_Money + 60000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 2
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 446540||2020-07-15 09:00:00||Full||WDL||올랜도 시티||뉴욕 시티||3.21||3.51||2.15||6046||156
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 451141||2020-07-15 10:00:00||Full||WDL||레온||후아레스||1.46||4.17||5.57||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 446619||2020-07-15 11:30:00||Full||WDL||필라델피아 유니온||Inter Miami CF||2.35||3.65||2.77||6046||156
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 450611||2020-07-15 17:00:00||Full||WDL||MTK 부다페스트||III. Keruleti TVE||1.28||5.27||7.37||6046||14493
+회원번호 : 2 아이디 : phpprogram- 구매내역 리스트 : 1||2020-07-15 08:44:05||Full||WDL||3폴더 보너스||배팅금지||1.03||||1||10000001||38337
+회원번호 : 2 아이디 : phpprogram- 구매내역 : 구매번호 : 4745 / 경기갯수 : 5 / 총배당률 : 11.46 / 배팅금액 : 10000 / 보유금액 : 87256480 / 당첨금액 : 114600 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 2 아이디 : phpprogram- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 2, MI_Type        = 'MemberBetCancel', BG_Key         = 4745, MI_Money       = 10000, MI_Prev_Money  = 87246480, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 2 아이디 : phpprogram- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 2
+회원번호 : 3515 아이디 : cuslove0- 구매내역 리스트 : 451118||2020-07-15 10:00:00||Full||UnderOver||레온||후아레스||2.11||2.5||1.68||6046||14493
+회원번호 : 3515 아이디 : cuslove0- 구매내역 리스트 : 446628||2020-07-15 11:30:00||Full||UnderOver||필라델피아 유니온||Inter Miami CF||1.44||3.5||2.69||6046||156
+회원번호 : 3515 아이디 : cuslove0- 구매내역 : 구매번호 : 4747 / 경기갯수 : 2 / 총배당률 : 2.41 / 배팅금액 : 33000 / 보유금액 : 33000 / 당첨금액 : 79530 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 3515 아이디 : cuslove0- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3515, MI_Type        = 'MemberBetCancel', BG_Key         = 4747, MI_Money       = 33000, MI_Prev_Money  = 0, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3515 아이디 : cuslove0- 머니지급 : UPDATE members SET M_Money = M_Money + 33000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3515
+회원번호 : 3339 아이디 : kkll- 구매내역 리스트 : 450811||2020-07-15 18:00:00||Full||WDL||라쿠텐||세이부||1.7||0||2.1||154914||4146
+회원번호 : 3339 아이디 : kkll- 구매내역 리스트 : 450770||2020-07-15 18:00:00||Full||WDL||오릭스||소프트뱅크||2.25||0||1.55||154914||4146
+회원번호 : 3339 아이디 : kkll- 구매내역 리스트 : 450836||2020-07-15 18:00:00||Full||WDL||주니치||요코하마||2.25||0||1.55||154914||4146
+회원번호 : 3339 아이디 : kkll- 구매내역 리스트 : 450835||2020-07-15 18:00:00||Full||WDL||한신||야쿠르트||1.75||0||2.05||154914||4146
+회원번호 : 3339 아이디 : kkll- 구매내역 : 구매번호 : 4749 / 경기갯수 : 4 / 총배당률 : 7.14 / 배팅금액 : 30000 / 보유금액 : 130000 / 당첨금액 : 214200 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 3339 아이디 : kkll- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3339, MI_Type        = 'MemberBetCancel', BG_Key         = 4749, MI_Money       = 30000, MI_Prev_Money  = 100000, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3339 아이디 : kkll- 머니지급 : UPDATE members SET M_Money = M_Money + 30000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3339
+회원번호 : 3531 아이디 : Jiying1- 구매내역 리스트 : 450837||2020-07-15 18:00:00||Full||WDL||히로시마||요미우리||1.95||0||1.85||154914||4146
+회원번호 : 3531 아이디 : Jiying1- 구매내역 리스트 : 450952||2020-07-15 18:30:00||Full||WDL||롯데||LG||1.95||0||1.85||154914||7807
+회원번호 : 3531 아이디 : Jiying1- 구매내역 리스트 : 450966||2020-07-15 18:30:00||Full||Handicap||두산||SK||1.65||-1.5||2.15||154914||7807
+회원번호 : 3531 아이디 : Jiying1- 구매내역 리스트 : 450920||2020-07-15 18:30:00||Full||WDL||삼성||기아||2||0||1.8||154914||7807
+회원번호 : 3531 아이디 : Jiying1- 구매내역 리스트 : 1||2020-07-15 13:51:53||Full||WDL||3폴더 보너스||배팅금지||1.03||||1||10000001||38337
+회원번호 : 3531 아이디 : Jiying1- 구매내역 : 구매번호 : 4752 / 경기갯수 : 5 / 총배당률 : 11.63 / 배팅금액 : 150000 / 보유금액 : 1226000 / 당첨금액 : 1744500 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 3531 아이디 : Jiying1- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3531, MI_Type        = 'MemberBetCancel', BG_Key         = 4752, MI_Money       = 150000, MI_Prev_Money  = 1076000, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3531 아이디 : Jiying1- 머니지급 : UPDATE members SET M_Money = M_Money + 150000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3531
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450770||2020-07-15 18:00:00||Full||WDL||오릭스||소프트뱅크||2.25||0||1.55||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450750||2020-07-15 18:00:00||Full||WDL||니혼햄||지바롯데||1.85||0||1.95||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450836||2020-07-15 18:00:00||Full||WDL||주니치||요코하마||2.25||0||1.55||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 : 구매번호 : 4757 / 경기갯수 : 3 / 총배당률 : 6.8 / 배팅금액 : 10000 / 보유금액 : 199900 / 당첨금액 : 68000 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+회원번호 : 3427 아이디 : ppppp1- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3427, MI_Type        = 'MemberBetCancel', BG_Key         = 4757, MI_Money       = 10000, MI_Prev_Money  = 189900, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3427 아이디 : ppppp1- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3427
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450805||2020-07-15 18:00:00||Full||UnderOver||라쿠텐||세이부||2.11||8.5||1.73||154914||4146
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450802||2020-07-15 18:00:00||Full||Handicap||라쿠텐||세이부||2.2||-1.5||1.6||154914||4146
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450784||2020-07-15 18:00:00||Full||Handicap||오릭스||소프트뱅크||1.85||1.5||1.95||154914||4146
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450787||2020-07-15 18:00:00||Full||UnderOver||오릭스||소프트뱅크||1.92||8.5||1.92||154914||4146
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450953||2020-07-15 18:30:00||Full||WDL||키움||NC||1.45||0||2.4||154914||7807
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450966||2020-07-15 18:30:00||Full||Handicap||두산||SK||1.65||-1.5||2.15||154914||7807
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 447596||2020-07-15 19:00:00||Full||UnderOver||도쿠시마 보르티스||레노파 야마구치 FC||2.36||2.5||1.61||6046||35377
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 450832||2020-07-15 18:00:00||Full||UnderOver||한신||야쿠르트||2.06||7.5||1.76||154914||4146
+회원번호 : 1115 아이디 : vsb6060- 구매내역 리스트 : 3||2020-07-15 14:32:45||Full||WDL||5폴더 보너스||배팅금지||1.07||||1||10000001||38337
+회원번호 : 1115 아이디 : vsb6060- 구매내역 : 구매번호 : 4760 / 경기갯수 : 9 / 총배당률 : 97.95 / 배팅금액 : 30000 / 보유금액 : 40000 / 당첨금액 : 2938500 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 1115 아이디 : vsb6060- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 1115, MI_Type        = 'MemberBetCancel', BG_Key         = 4760, MI_Money       = 30000, MI_Prev_Money  = 10000, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 1115 아이디 : vsb6060- 머니지급 : UPDATE members SET M_Money = M_Money + 30000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 1115
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450968||2020-07-15 18:30:00||Full||UnderOver||두산||SK||1.83||9||1.99||154914||7807
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450945||2020-07-15 18:30:00||Full||UnderOver||롯데||LG||1.99||9||1.83||154914||7807
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450984||2020-07-15 18:30:00||Full||Handicap||키움||NC||1.85||-1.5||1.95||154914||7807
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450837||2020-07-15 18:00:00||Full||WDL||히로시마||요미우리||1.95||0||1.85||154914||4146
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450784||2020-07-15 18:00:00||Full||Handicap||오릭스||소프트뱅크||1.85||1.5||1.95||154914||4146
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450831||2020-07-15 18:00:00||Full||UnderOver||한신||야쿠르트||1.93||8||1.91||154914||4146
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 450804||2020-07-15 18:00:00||Full||UnderOver||라쿠텐||세이부||1.92||9||1.92||154914||4146
+회원번호 : 3472 아이디 : kky8894- 구매내역 리스트 : 3||2020-07-15 17:03:53||Full||WDL||5폴더 보너스||배팅금지||1.07||||1||10000001||38337
+회원번호 : 3472 아이디 : kky8894- 구매내역 : 구매번호 : 4774 / 경기갯수 : 8 / 총배당률 : 88.61 / 배팅금액 : 30000 / 보유금액 : 70000 / 당첨금액 : 2658300 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 3472 아이디 : kky8894- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3472, MI_Type        = 'MemberBetCancel', BG_Key         = 4774, MI_Money       = 30000, MI_Prev_Money  = 20000, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3472 아이디 : kky8894- 머니지급 : UPDATE members SET M_Money = M_Money + 30000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3472
+회원번호 : 928 아이디 : sdsd1- 구매내역 리스트 : 450920||2020-07-15 18:30:00||Full||WDL||삼성||기아||2||0||1.8||154914||7807
+회원번호 : 928 아이디 : sdsd1- 구매내역 리스트 : 450952||2020-07-15 18:30:00||Full||WDL||롯데||LG||1.95||0||1.85||154914||7807
+회원번호 : 928 아이디 : sdsd1- 구매내역 리스트 : 1||2020-07-15 17:42:20||Full||WDL||3폴더 보너스||배팅금지||1.03||||999||10000001||38337
+회원번호 : 928 아이디 : sdsd1- 구매내역 : 구매번호 : 4788 / 경기갯수 : 3 / 총배당률 : 3.42 / 배팅금액 : 200000 / 보유금액 : 800969 / 당첨금액 : 684000 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : Mozilla/5.0 (Windows NT 6.1; ) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+회원번호 : 928 아이디 : sdsd1- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 928, MI_Type        = 'MemberBetCancel', BG_Key         = 4788, MI_Money       = 200000, MI_Prev_Money  = 600969, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 928 아이디 : sdsd1- 머니지급 : UPDATE members SET M_Money = M_Money + 200000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 928
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450770||2020-07-15 18:00:00||Full||WDL||오릭스||소프트뱅크||2.25||0||1.55||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450750||2020-07-15 18:00:00||Full||WDL||니혼햄||지바롯데||1.85||0||1.95||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 리스트 : 450811||2020-07-15 18:00:00||Full||WDL||라쿠텐||세이부||1.7||0||2.1||154914||4146
+회원번호 : 3427 아이디 : ppppp1- 구매내역 : 구매번호 : 4796 / 경기갯수 : 3 / 총배당률 : 7.07 / 배팅금액 : 10000 / 보유금액 : 199900 / 당첨금액 : 70700 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : 
+회원번호 : 3427 아이디 : ppppp1- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3427, MI_Type        = 'MemberBetCancel', BG_Key         = 4796, MI_Money       = 10000, MI_Prev_Money  = 189900, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3427 아이디 : ppppp1- 머니지급 : UPDATE members SET M_Money = M_Money + 10000, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3427
+회원번호 : 3282 아이디 : gojo013- 구매내역 리스트 : 450913||2020-07-15 18:30:00||Full||UnderOver||삼성||기아||2.01||9||1.77||154914||7807
+회원번호 : 3282 아이디 : gojo013- 구매내역 리스트 : 1||2020-07-15 18:52:46||Full||WDL||3폴더 보너스||배팅금지||1.03||||999||10000001||38337
+회원번호 : 3282 아이디 : gojo013- 구매내역 : 구매번호 : 4822 / 경기갯수 : 2 / 총배당률 : 1.82 / 배팅금액 : 26260 / 보유금액 : 26260 / 당첨금액 : 47793 / 구매일자 : Await / 배팅구분 : prematch / 브라우저 : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36
+회원번호 : 3282 아이디 : gojo013- 지급로그내역 : INSERT INTO moneyinfo SET M_Key          = 3282, MI_Type        = 'MemberBetCancel', BG_Key         = 4822, MI_Money       = 26260, MI_Prev_Money  = 0, MI_Memo        = '회원배팅 취소로 머니지급함.', MI_RegDate     = NOW() 
+회원번호 : 3282 아이디 : gojo013- 머니지급 : UPDATE members SET M_Money = M_Money + 26260, M_Bet_Cancel_Cnt = M_Bet_Cancel_Cnt - 1 WHERE M_Key = 3282

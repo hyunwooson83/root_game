@@ -1,0 +1,382 @@
+<?php include_once('../header.html'); ?>
+
+<div class="nmenu member">
+	<code class="left" onClick="$('#nmenu_scroll').scrollLeft(-300);"><img src="/_go/renewal/mobile/img/nmenu_left_btn.png" /></code>
+	<div id="nmenu_scroll">
+		<ul class="nmenu_cate2">
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom.html'">총판현황</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom_per.html'">나를추천한회원</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom_calc.html'" class="active">하부회원보기</li>
+			<li>승패보고서</li>
+			<li>승패정산보고서</li>
+			<li>정산내역</li>
+		</ul>
+	</div>
+	<code class="right" onClick="$('#nmenu_scroll').scrollLeft(1000);"><img src="/_go/renewal/mobile/img/nmenu_right_btn.png" /></code>
+</div>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>하부회원보기</span>
+			<em>Member list</em>
+		</h1>
+	</div>
+
+	<div class="sub_mypage_wrap">
+
+
+		<div class="sub_searchbox">
+			<div>
+				<h1>
+					<input type="text" class="style_input date" value="2017-05-03">
+					&nbsp;&nbsp;~&nbsp;&nbsp;
+					<input type="text" class="style_input date" value="2017-05-03">
+					<ol>
+						<li class="active">오늘</li>
+						<li>1주일</li>
+						<li>15일</li>
+					</ol>
+				</h1>
+				<div class="sub_searchbox_btnbox">
+					<a href="" class="style_btn_confirm">검색하기</a>
+				</div>
+			</div>
+		</div>
+
+		<table class="sub_board_type sub_board_type4">
+			<tbody>
+				<tr class="sob_board_type4_border">
+					<td>
+						<em class="font_orange">50,000</em>
+						<span>총보유머니</span>
+					</td>
+					<td>
+						<em class="font_gobet">500,000</em>
+						<span>총입금금액</span>
+					</td>
+					<td>
+						<em class="font_wred">3,250,000</em>
+						<span>총출금금액</span>
+					</td>
+					<td>
+						<em class="font_gobet2">5명</em>
+						<span>나의 회원수</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<em>50,000</em>
+						<span>스포츠게임</span>
+					</td>
+					<td>
+						<em>50,000</em>
+						<span>카지노게임</span>
+					</td>
+					<td>
+						<em>50,000</em>
+						<span>에볼루션게임</span>
+					</td>
+					<td>
+						<em>50,000</em>
+						<span>미니게임</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<BR>
+
+
+		<ul class="sub_cash_list recom_calc">
+
+			<li>
+				<label onclick="recom_open(1);" id="recom_id_1" style="display: block;">상세보기</label>
+				<div>
+					<em>회원아이디</em>
+					<span class="font_gobet">red1</span>
+				</div>
+
+				<div>
+					<em>요율</em>
+					<span class="font_orange">0.5%</span>
+				</div>
+				<div>
+					<em>요율(실시간)</em>
+					<span class="font_orange">0.5%</span>
+				</div>
+				<div>
+					<em>보유머니</em>
+					<span>10,000</span>
+				</div>
+				<div>
+					<em>총 입금금액</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>총 출금금액</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>스포츠게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>카지노게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>미니게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>가상게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>가입일</em>
+					<span class="col2">2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>회원수</em>
+					<span>4명 <label>회원보기</label></span>
+				</div>
+				<fieldset class="sub_recom_detail" id="recom_detail_1" style="display: none;">
+					<table>
+						<thead>
+							<tr>
+								<th width="40%">분류</th>
+								<td>베팅금액</td>
+								<td>정산금액</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>해외스포츠북</th>
+								<td>3,0000</td>
+								<td>3,0000</td>
+							</tr>
+							<tr>
+								<th>국내스포츠북</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>스카이프벳</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>카지노게임</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>에볼루션카지노</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>아바타카지노</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>미니게임</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>가상스포츠</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>닭싸움</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>로또</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>홀덤포커</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>합계</th>
+								<td>31,730,000</td>
+								<td class="font_gobet2">31,730,000</td>
+							</tr>
+						</tfoot>
+					</table>
+					<span onclick="recom_close(1);">닫기</span>
+				</fieldset>
+			</li>
+
+			<li>
+				<label onclick="recom_open(2);" id="recom_id_2">상세보기</label>
+				<div>
+					<em>회원아이디</em>
+					<span class="font_gobet">red1</span>
+				</div>
+
+				<div>
+					<em>요율</em>
+					<span class="font_orange">0.5%</span>
+				</div>
+				<div>
+					<em>요율(실시간)</em>
+					<span class="font_orange">0.5%</span>
+				</div>
+				<div>
+					<em>보유머니</em>
+					<span>10,000</span>
+				</div>
+				<div>
+					<em>총 입금금액</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>총 출금금액</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>스포츠게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>카지노게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>미니게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>가상게임</em>
+					<span>10,0000</span>
+				</div>
+				<div>
+					<em>가입일</em>
+					<span class="col2">2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>회원수</em>
+					<span>4명 <label>회원보기</label></span>
+				</div>
+				<fieldset class="sub_recom_detail" id="recom_detail_2">
+						<table>
+						<thead>
+							<tr>
+								<th width="40%">분류</th>
+								<td>베팅금액</td>
+								<td>정산금액</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>해외스포츠북</th>
+								<td>3,0000</td>
+								<td>3,0000</td>
+							</tr>
+							<tr>
+								<th>국내스포츠북</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>스카이프벳</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>카지노게임</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>에볼루션카지노</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>아바타카지노</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>미니게임</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>가상스포츠</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>닭싸움</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>로또</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+							<tr>
+								<th>홀덤포커</th>
+								<td>30,000</td>
+								<td>30,000</td>
+							</tr>
+
+						</tbody>
+						<tfoot>
+							<tr>
+								<th>합계</th>
+								<td>31,730,000</td>
+								<td class="font_gobet2">31,730,000</td>
+							</tr>
+						</tfoot>
+					</table>
+					<span onclick="recom_close(2);">닫기</span>
+				</fieldset>
+			</li>
+
+		</ul>
+
+		<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+		</div>
+
+
+	</div>
+
+</div>
+<script>
+function recom_open(idx){
+	$("#recom_id_"+idx).fadeOut('fast');
+	$("#recom_detail_"+idx).slideDown('fast');
+}
+
+function recom_close(idz){
+	$("#recom_id_"+idz).fadeIn('fast');
+	$("#recom_detail_"+idz).slideUp('fast');
+}
+</script>
+<?php include_once('../footer.html'); ?>

@@ -1,0 +1,66 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(11)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+	<div class="sub_wrap type2">
+		<div class="sub_title">
+			<div class="title1">1:1문의</div>
+			<div class="title2">GOBET Q&A</div>
+		</div>
+		<ul class="sub_menu">
+			<li class="on" onclick="location.href='/_go/renewal/qna_list.html'">1:1문의하기</li>
+			<li onclick="location.href='/_go/renewal/faq_list.html'">자주묻는 질문</li>
+			<li onclick="location.href='/_go/renewal/notice_list.html'">공지사항</li>
+		</ul>
+
+		<div class="board_wrap board2">
+			<div class="text1">신속하게 답변드릴 수 있도록 노력하겠습니다.</div>
+			<div class="qna_write_box">
+				<ul class="qna_write">
+					<li>
+						<span>분류</span>
+						<select class="qna_select">
+							<option>선택하세요</option>
+							<option value="">스포츠북</option>
+							<option value="">가상게임</option>
+							<option value="">마이크로게임</option>
+							<option value="">아시아게이밍</option>
+							<option value="">타이산게임</option>
+							<option value="">올벳게임</option>
+							<option value="">플레이텍게임</option>
+							<option value="">파워볼</option>
+							<option value="">파워사다리</option>
+							<option value="">스피드키노</option>
+							<option value="">키노사다리</option>
+							<option value="">방구차사다리</option>
+							<option value="">주사위게임</option>
+							<option value="">회원문의</option>
+							<option value="">정산문의</option>
+							<option value="">기타문의</option>
+						</select>
+					</li>
+					<li>
+						<span>제목</span>
+						<input type="text" placeholder="제목을 입력해주세요." class="qna_text"> 
+					</li>
+					<li>
+						<textarea class="qna_textarea">안녕하세요.
+문의드릴 사항이 있습니다.</textarea>
+					</li>
+				</ul>
+			
+			</div>
+
+			<div class="btn_wrap">
+				<a href="/_go/renewal/qna_list.html" class="bl">목록</a>
+				<a href="/_go/renewal/qna_list.html">문의등록</a>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<?php include_once('footer.html'); ?>

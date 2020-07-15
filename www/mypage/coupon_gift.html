@@ -1,0 +1,139 @@
+<?php include_once('../header.html'); ?>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>쿠폰 발송하기</span>
+			<em>COUPON GIFT</em>
+		</h1>
+		<ul class="sub_title_category">
+			<li onclick="location.href='/_go/renewal/mobile/mypage/coupon.html'">쿠폰사용하기</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/coupon_gift.html'" class="active">쿠폰발송하기</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/coupon_list.html'">쿠폰발급내역</li>
+		</ul>
+	</div>
+
+	<div class="sub_mypage_wrap">
+		<div class="sub_mypage_text">사용가능한 쿠폰 수 : <b class="font_red">0장</b></div>
+		<ul class="sub_cash_list coupon">
+			<li>
+				<input type="checkbox" class="check">
+				쿠폰명 : <b>테스트1000원</b><br>
+				<em>쿠폰금액 <b>310,000</b></em>
+				<em>보낸 회원 아이디 <b>ed1000</b></em>
+				<em>처리상태 <b class="font_gray">기간만료</b></em>
+				<font>발급일 : 2017-07-11</font>
+				<font>만료일자 : 2017-07-11</font>
+			</li>
+			<li>
+				<input type="checkbox" class="check">
+				쿠폰명 : <b>테스트1000원</b><br>
+				<em>쿠폰금액 <b>310,000</b></em>
+				<em>보낸 회원 아이디 <b>ed1000</b></em>
+				<em>처리상태 <b class="font_red">사용가능</b></em>
+				<font>발급일 : 2017-07-11</font>
+				<font>만료일자 : 2017-07-11</font>
+			</li>
+			<li>
+				<input type="checkbox" class="check">
+				쿠폰명 : <b>테스트1000원</b><br>
+				<em>쿠폰금액 <b>310,000</b></em>
+				<em>보낸 회원 아이디 <b>ed1000</b></em>
+				<em>처리상태 <b class="font_gray">기간만료</b></em>
+				<font>발급일 : 2017-07-11</font>
+				<font>만료일자 : 2017-07-11</font>
+			</li>
+			<li>
+				<input type="checkbox" class="check">
+				쿠폰명 : <b>테스트1000원</b><br>
+				<em>쿠폰금액 <b>310,000</b></em>
+				<em>보낸 회원 아이디 <b>ed1000</b></em>
+				<em>처리상태 <b class="font_red">사용가능</b></em>
+				<font>발급일 : 2017-07-11</font>
+				<font>만료일자 : 2017-07-11</font>
+			</li>
+		</ul>
+		
+		<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+		</div>
+
+		<div class="apply_con coupon" style="background:#245562; border-radius:0.4em; padding:1.5em 0; margin-top:1.5em">
+			<div class="title" style="clear:both; width:100%; text-align:center">쿠폰 선물 받으실 분</div>
+			<div class="input_con" style="clear:both; width:100%; text-align:center; padding-left:16%">
+				<input type="text" placeholder="">
+				<input type="button" value="회원추가"  onclick="recom_open();">
+			</div>
+			<div class="ment" style="clear:both; text-align:center; color:rgba(255,255,255,0.5)">
+				[회원추가] 버튼을 클릭하여 쿠폰받을 회원을 선택하세요.
+			</div>
+		</div>
+		<div class="apply_btn_wrap coupon">
+			<span class="apply_btn">쿠폰발송</span>
+		</div>	
+		<BR>
+
+	</div>
+
+</div>
+
+<div id="recom_bg" style="display: none;"></div>
+<div id="recom_add_setting" style="display: none;">
+	<em>회원선택</em>
+	<div>
+		<ul>
+			<li>
+				<input type="radio" name="cou" id="cou1">
+				<label for="cou1">
+					<span>번호 : <b>123</b></span>
+					<span>회원아이디 : <b>blue1</b></span>
+					<span>닉네임 : <b>블루</b></span>
+				</label>
+			</li>
+			<li>
+				<input type="radio" name="cou" id="cou2">
+				<label for="cou2">
+					<span>번호 : <b>123</b></span>
+					<span>회원아이디 : <b>blue1</b></span>
+					<span>닉네임 : <b>블루</b></span>
+				</label>
+			</li>
+			<li>
+				<input type="radio" name="cou" id="cou3">
+				<label for="cou3">
+					<span>번호 : <b>123</b></span>
+					<span>회원아이디 : <b>blue1</b></span>
+					<span>닉네임 : <b>블루</b></span>
+				</label>
+			</li>
+		</ul>
+		<br>
+		<div>
+			<a href="javascript:recom_close();" class="ggray">확인</a>
+			<a href="javascript:recom_close();">취소</a>
+		</div>
+	</div>
+</div>
+<script>
+function recom_open(){
+	$("html, body").bind('touchmove', function(e){e.preventDefault()});
+	$("#recom_add_setting").fadeIn();
+	$("#recom_bg").fadeIn();
+}
+function recom_close(){
+	$("html, body").unbind('touchmove');
+	$("#recom_add_setting").fadeOut();
+	$("#recom_bg").fadeOut();
+}
+</script>
+
+<?php include_once('../footer.html'); ?>

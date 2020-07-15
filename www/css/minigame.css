@@ -1,0 +1,116 @@
+.minigame_menu>.mini_list, .minigame_menu>img {
+    float: left;
+    border: 1px solid #111;
+}
+.timer_box>em {
+    padding: 1px 10px;
+    color: #0583bd;
+    border: 2px solid #0583bd;
+    border-radius: 15px;
+    cursor: pointer;
+    background: transparent;
+    box-shadow: inherit;
+}
+.minigame_menu>.mini_list {
+    width: 860px;
+    height: 54px;
+    line-height: 54px;
+    border: none;
+    box-sizing: border-box;
+    text-align: right;
+    margin-left:113px;
+}
+
+.minigame_menu {
+    border: inherit;
+    overflow: hidden;
+    margin-bottom:20px;
+}
+.minigame_menu>.mini_list>a {
+    display: inline-block;
+    float: left;
+    width: 25%;
+    margin-left: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #5e7d9b;
+}
+.minigame_menu>.mini_list>a.active {
+    color: #ca9423;
+    text-decoration: inherit;
+}
+.minigame_menu>.mini_list>a >.js-powerball-menu-container, .minigame_menu>.mini_list>a >.js-powerladder-menu-container, .minigame_menu>.mini_list>a >.js-speedkeno-menu-container, .minigame_menu>.mini_list>a >.js-kenoladder-menu-container {
+    background: #222c36;
+    border-top: 2px solid #0583bd;
+    border-right: 1px solid #0583bd;
+    height: 52px;
+}
+.minigame_menu>.mini_list>a.active >div {
+    background: #1c3d51;
+    border-top-color: #ff7f00;
+
+}
+.minigame_menu>.mini_list>a .css-powerball-img, .minigame_menu>.mini_list>a .css-powerladder-img, .minigame_menu>.mini_list>a .css-speedkeno-img, .minigame_menu>.mini_list>a .css-kenoladder-img {
+    background-image: url(../img/minigames-logo-icon01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    float: left;
+    height: 51px;
+    width: 70px;
+}
+.minigame_menu>.mini_list>a .css-powerladder-img {
+    background-image: url(../img/minigames-logo-icon02.png);
+}
+.minigame_menu>.mini_list>a .css-speedkeno-img {
+    background-image: url(../img/minigames-logo-icon03.png);
+}
+.minigame_menu>.mini_list>a .css-kenoladder-img {
+    background-image: url(../img/minigames-logo-icon04.png);
+}
+.js-countdown-powerball, .js-countdown-powerladder, .js-countdown-speedkeno, .js-countdown-kenoladder {
+    background-image: url(../img/minigames-clock-icon.png);
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    color: #fff600;
+    font-size: 18px;
+    font-weight: 600;
+    /*padding-left: 20px;*/
+    text-decoration: none;
+}
+.js-powerball-menu-container input[type="button"], .js-powerladder-menu-container input[type="button"], .js-speedkeno-menu-container input[type="button"], .js-kenoladder-menu-container input[type="button"] {
+    background: #e94419;
+    background: -moz-linear-gradient(top, #f16c35 0%, #e94419 100%);
+    background: -webkit-linear-gradient(top, #f16c35 0%,#e94419 100%);
+    background: linear-gradient(to bottom, #f16c35 0%,#e94419 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e94419', endColorstr='#f16c35',GradientType=0 );
+    border: 1px solid #ab3112;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 0 rgba(255,255,255,0.3);
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    margin-top: -15px;
+    margin-left: 3px;
+    margin-right: 2px;
+    text-align: center;
+    text-shadow: 0 1px 0 #000;
+    width: 56px;
+}
+.mini_bettingslip>dt>div{
+    margin-bottom: 15px;
+}
+.bet-disable {
+    padding: 68px 0;
+}
+.timer_box h1 {
+    margin-left: 5px;
+}
+.mini_bettingbtn>li.w3last, .mini_bettingbtn>li.w3 {
+    height: 190px;
+}
+
+#last-play-date, #last_play_time { font-size:20px; margin-left:10px; }
+
+.game-time-list { width: 100%;}
+.game-time-list > thead > tr > td {background-color: #222c36; text-align: center; height: 50px; font-size:15px; border-top: #0583bd solid 3px !important;  }
+.game-time-list > tbody > tr > td {background-color: #222c36; text-align: center; height: 50px; font-size:15px; color:#fff600; font-weight: bold; border-bottom: #0583bd solid 3px !important; }

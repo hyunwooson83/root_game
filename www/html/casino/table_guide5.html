@@ -1,0 +1,84 @@
+<?php include_once('../sub_header.html'); ?>
+<div class="casino_bg">
+	<div class="casino_wrap">
+		<?php include_once('./casino_head.html'); ?>
+		<script>
+		$(document).ready(function(){
+			$(".sub_header > .top2 > li:nth-child(7)").addClass('active');
+			$(".casino_head > ul > li:nth-child(7)").addClass('on');
+		});
+		</script>	
+		<div class="casino_sub">
+			<div class="sub_title">
+				<div class="title1">테이블 가이드</div>
+				<div class="title2">TABLE GUIDE</div>
+			</div>
+			<div class="tb_menu_wrap">
+				<ul class="sub_menu">
+					<li onclick="location.href='/_go/renewal/casino/table_guide1.html'">바카라
+					</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide2.html'">블랙잭</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide3.html'">3카드포커</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide4.html'">캐리비안스터드포커</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide5.html'" class="on">룰렛</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide6.html'">다이사이</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide7.html'">빅휠</li>
+					<li onclick="location.href='/_go/renewal/casino/table_guide8.html'">텍사스홀덤포커</li>
+				</ul>
+				<dl class="sub_menu2">
+					<dd class="on">게임소개</dd>
+					<dd>베팅의 종류</dd>
+					<dd>게임진행</dd>
+				</dl>
+			</div>
+			<div class="table_guide">
+				<img src="/_go/renewal/img/tableguide/table_guide5_1.png">
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<style>
+.tg_area {position:relative; overflow:hidden}
+.tg_area > span {position:absolute; cursor:pointer}
+.tg_area > span.outside1 {left:200px; top:95px; width:700px; height:80px}
+.tg_area > span.outside2 {left:200px; top:215px; width:700px; height:105px}
+.tg_area > span.outside3 {left:200px; top:370px; width:700px; height:60px}
+.tg_area > span.outside4 {left:200px; top:500px; width:700px; height:60px}
+.tg_area > span.outside5 {left:200px; top:620px; width:700px; height:60px}
+
+.tg_area > span.inside1 {left:530px; top:915px; width:620px; height:60px}
+.tg_area > span.inside2 {left:530px; top:1045px; width:620px; height:60px}
+.tg_area > span.inside3 {left:530px; top:1160px; width:620px; height:80px}
+.tg_area > span.inside4 {left:530px; top:1270px; width:620px; height:105px}
+.tg_area > span.inside5 {left:530px; top:1415px; width:620px; height:60px}
+.tg_area > span.inside6 {left:530px; top:1540px; width:620px; height:60px}
+</style>
+
+<script>
+var num1 = 0;
+$(".sub_menu > li").each(function(){
+	if( $(this).hasClass("on") ){
+		num1 = $(this).index()+1;
+	}
+
+});
+
+$(".sub_menu2 > dd").click(function(){
+	$(".sub_menu2 > dd").removeClass('on');
+	$(this).addClass('on');
+	var num2 = $(this).index()+1;
+	if(num1 ==5 && num2 ==2){
+		$(".table_guide").html("<div class='tg_area'><img src='/_go/renewal/img/tableguide/table_guide5_2_1.png' /><span class='outside1' onClick='img_change(1);'></span><span class='outside2' onClick='img_change(2);'></span><span class='outside3' onClick='img_change(3);'></span><span class='outside4' onClick='img_change(4);'></span><span class='outside5' onClick='img_change(5);'></span><span class='inside1' onClick='img_change(1);'></span><span class='inside2' onClick='img_change(2);'></span><span class='inside3' onClick='img_change(3);'></span><span class='inside4' onClick='img_change(4);'></span><span class='inside5' onClick='img_change(5);'></span><span class='inside6' onClick='img_change(6);'></span></div>");
+	}else{
+		$(".table_guide > img").attr("src","/_go/renewal/img/tableguide/table_guide"+num1+"_"+num2+".png");
+	}
+});
+
+function img_change(ldx) {
+	$(".table_guide").html("<div class='tg_area'><img src='/_go/renewal/img/tableguide/table_guide5_2_"+ldx+".png' /><span class='outside1' onClick='img_change(1);'></span><span class='outside2' onClick='img_change(2);'></span><span class='outside3' onClick='img_change(3);'></span><span class='outside4' onClick='img_change(4);'></span><span class='outside5' onClick='img_change(5);'></span><span class='inside1' onClick='img_change(1);'></span><span class='inside2' onClick='img_change(2);'></span><span class='inside3' onClick='img_change(3);'></span><span class='inside4' onClick='img_change(4);'></span><span class='inside5' onClick='img_change(5);'></span><span class='inside6' onClick='img_change(6);'></span></div>");
+}
+</script>
+
+<?php include_once('../footer.html'); ?>

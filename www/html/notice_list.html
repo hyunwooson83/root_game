@@ -1,0 +1,94 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(11)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+	<div class="sub_wrap type2">
+		<div class="sub_title">
+			<div class="title1">공지사항</div>
+			<div class="title2">GOBET NOTICE</div>
+		</div>
+		<ul class="sub_menu">
+			<li onclick="location.href='/_go/renewal/qna_list.html'">1:1문의하기</li>
+			<li onclick="location.href='/_go/renewal/faq_list.html'">자주묻는 질문</li>
+			<li class="on" onclick="location.href='/_go/renewal/notice_list.html'">공지사항</li>
+		</ul>
+		<div class="qna_cate">
+			<a class="none on">전체</a>
+			<a>스포츠북</a>
+			<a>카지노게임</a>
+			<a>미니게임</a>
+			<a>가상게임</a>
+
+
+		</div>
+		<div class="board_wrap board2">
+			<div class="line_top"></div>
+			<table class="qna_list">
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>분류</th>
+						<th>제목</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>충전계좌 문의는 어떻게 하나요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[가상게임]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>충전,환전 이용가능한 최소 또는 최대 금액은 얼마인가요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[마이크로]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>정산은 어떻게 이루어지나요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>최소 베팅금액, 최대 베팅금액 베팅한도는 얼마인가요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>각각 미니게임별로 베팅방식은 다른가요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>조작픽 관련된 적특이 되는 경우도 있나요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>환전시 예금주 변경이 가능한가요?</div></td>
+					</tr>
+					<tr>
+						<td class="noti">공지</td>
+						<td class="gr2">[스포츠북]</td>
+						<td class="subject2" onclick="location.href='/_go/renewal/notice_view.html'"><div>입금자명이 달라도 입금이 가능한가요?</div></td>
+					</tr>
+				</tbody>
+
+			</table>
+			<div class="line_bottom"></div>
+
+			<div class="paging_box">
+				<a href="">◀</a><a href="">1</a><a href="" class="hit">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a><a href="">▶</a>
+			</div>
+			<div class="search_box">
+				<input type="text" placeholder="검색"><input type="button" value="검색" class="btn">
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<?php include_once('footer.html'); ?>

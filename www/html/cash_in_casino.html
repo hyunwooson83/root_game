@@ -1,0 +1,133 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(12)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+<div class="sub_wrap type2">
+	<div class="sub_title">
+		<div class="title1">카지노 충전</div>
+		<div class="title2">CASINO CHARGE</div>
+	</div>
+	<ul class="sub_menu">
+		<li onclick="location.href='/_go/renewal/cash_in_money.html'">보유머니 충전</li>
+		<li class="on" onclick="location.href='/_go/renewal/cash_in_casino.html'">카지노 충전</li>
+		<li onclick="location.href='/_go/renewal/mypage/money_money_charge.html'">보유머니 충전내역</li>
+		<li onclick="location.href='/_go/renewal/mypage/money_casino_charge.html'">카지노 충전내역</li>
+	</ul>
+	<div class="sub_box money_box">
+		<div class="money_caution">
+			<h1><img src="/_go/renewal/img/img_caution.png" />필독사항</h1>
+			<ul>
+				<li class="point"><strong>⊙</strong> 카지노 머니충전 시 보유머니에서 차감되며, 신청한 카지노로 충전됩니다.</li>
+				<li><strong>⊙</strong> 카지노 머니충전이 완료되면 해당 카지노를 플레이 할 수 있습니다.</li>
+				<li><strong>⊙</strong> 자세한 문의사항은 고객센터를 이용해 주시기 바랍니다.</li>
+			</ul>
+		</div>
+		<!--<ul class="money_con1 casino">
+			<li>
+				<div class="text1">현재 보유머니</div>
+				<var></var>
+				<div class="text2">150,000원</div>
+			</li>
+			<li>
+				<div class="text1">카지노 충전 예상금액</div>
+				<var></var>
+				<div class="text2 t_green">100,000원</div>
+			</li>
+			<li>
+				<div class="text1">충전 후 보유머니</div>
+				<var></var>
+				<div class="text2">250,000원</div>
+			</li>
+			<li>
+				<div class="text1">충전사이트</div>
+				<var></var>
+				<div class="text2 casino_click">마이크로</div>
+			</li>
+		</ul>-->
+		<div class="money_con4">
+			<div class="money_title">
+				<span class="t_white">사이트선택하기</span>
+			</div>
+			<div class="c_site_list">
+				<div title="마이크로게이밍" class="on">
+					<img src="/_go/renewal/img/cash_site1.png">
+					<div>마이크로게이밍</div>
+				</div>
+				<div title="타이산">
+					<img src="/_go/renewal/img/cash_site3.png">
+					<div>타이산</div>
+				</div>
+				<div title="올벳">
+					<img src="/_go/renewal/img/cash_site4.png">
+					<div>올벳</div>
+				</div>
+				<div title="아시아게이밍">
+					<img src="/_go/renewal/img/cash_site2.png">
+					<div>아시아게이밍</div>
+				</div>
+				<div title="플레이텍">
+					<img src="/_go/renewal/img/cash_site6.png">
+					<div>플레이텍</div>
+				</div>
+			</div>
+		</div>
+		<script>
+		$(".c_site_list > div ").click(function(){
+			$(".c_site_list > div ").removeClass("on");
+			$(this).addClass("on");
+			$('.casino_click').text(  $(this).attr("title") );
+		});
+		</script>
+		<div class="money_con3">
+			<div class="money_title">
+				<span class="t_white">충전신청하기</span>
+			</div>
+			<div class="content">
+				<div class="con1">
+					<div>현재 보유머니<span class="t_green">150,000원</span></div>
+					<div>충전사이트<span class="t_orange casino_click">마이크로게이밍</span></div>
+				</div>
+				<div class="money_choice">
+					<div class="left">신청금액선택</div>
+					<div class="right">
+						<div class="input">
+							<input type="text" class="i1" placeholder="직접입력"><span>원</span>
+						</div>
+						<div class="m_btn">
+							<!--<span class="all">전액</span>-->
+							<span>1,000</span>
+							<span>5,000</span>
+							<span>10,000</span>
+							<span>50,000</span>
+							<span>100,000</span>
+							<span>300,000</span>
+							<span>500,000</span>
+							<span>1,000,000</span>
+							<span class="all">정정</span>
+						</div>
+					</div>
+				</div>
+				<div class="point">
+					<span class="title">입금보너스받기</span>
+					<span class="input"><input type="radio" id="p1" name="point" checked><label for="p1">동의하기</label></span>
+					<span class="input"><input type="radio" id="p2" name="point"><label for="p2">동의하지않기</label></span>
+					<div class="ment t_yellow">※입금시 받은 보너스 금액 400% 롤링을 하지 못하였을 경우 보너스 금액을 인정하지 않습니다.<BR />　보너스 머니를 제외한 금액은 환전이 가능하며 보너스 금액은 회수조치 됩니다.</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="money_btn_wrap">
+			<span>신청하기</span>
+		</div>
+
+
+	</div>
+</div><!-- sub_wrap -->
+</div><!-- sub_bg -->
+
+ 
+
+<?php include_once('footer.html'); ?>

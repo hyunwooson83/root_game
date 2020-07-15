@@ -1,0 +1,166 @@
+<?php include_once('../header.html'); ?>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>쿠폰 발급내역</span>
+			<em>COUPON LIST</em>
+		</h1>
+		<ul class="sub_title_category">
+			<li onclick="location.href='/mobile/mypage/coupon.html'">쿠폰사용하기</li>
+			<li onclick="location.href='/mobile/mypage/coupon_gift.html'">쿠폰발송하기</li>
+			<li onclick="location.href='/mobile/mypage/coupon_list.html'" class="active">쿠폰발급내역</li>
+		</ul>
+	</div>
+
+
+	<div class="sub_mypage_wrap">
+		<div class="coupon_issue_btn_wrap">
+			<span>쿠폰발급내역</span>
+			<span>쿠폰선물내역</span>
+		</div>
+
+		<ul class="sub_member_top three">
+			<li>
+				<em>사용가능쿠폰</em>
+				<var></var>
+				<span class="font_gobet">9장</span>
+			</li>
+			<li>
+				<em>사용완료쿠폰</em>
+				<var></var>
+				<span>0장</span>
+			</li>
+			<li>
+				<em>기간만료쿠폰</em>
+				<var></var>
+				<span class="font_wred">0장</span>
+			</li>
+		</ul>
+
+		<!-- 기간검색 { -->
+		<div class="sub_searchbox">
+			<div>
+				<h1>
+					<input type="text" class="style_input date" value="2017-05-03">
+					&nbsp;&nbsp;~&nbsp;&nbsp;
+					<input type="text" class="style_input date" value="2017-05-03">
+					<ol>
+						<li class="active">오늘</li>
+						<li>1주일</li>
+						<li>15일</li>
+					</ol>
+				</h1>
+				<div class="sub_searchbox_btnbox">
+					<a href="" class="style_btn_confirm">검색하기</a>
+				</div>
+			</div>
+		</div>
+		<div class="coupon_issue_box">
+			<!--<div class="sub_mypage_text" style="text-align:center">사용가능한 쿠폰 수 : <b class="font_red">0장</b> , 사용완료 : <b class="font_blue">0장</b> , 기간만료 : <b style="color:#FFF">0장</b></div>-->
+			<ul class="sub_cash_list">
+				<li>
+					쿠폰명 : <b>테스트1000원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_gray">기간만료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+				<li>
+					쿠폰명 : <b>테스트1000원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_white">사용완료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+				<li>
+					쿠폰명 : <b>테스트1000원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_gray">기간만료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+				<li>
+					쿠폰명 : <b>테스트1000원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_red">사용가능</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+			</ul>
+			<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+			</div>
+		</div>
+		<div class="coupon_issue_box">
+			<!--<div class="sub_mypage_text">쿠폰선물내역 : <b>0장</b></div>-->
+			<ul class="sub_cash_list">
+				<li>
+					쿠폰명 : <b>테스트2340원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_gray">기간만료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+				<li>
+					쿠폰명 : <b>테스트44440원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_white">사용완료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+				<li>
+					쿠폰명 : <b>테스트1000원</b><br>
+					<em>쿠폰금액 <b>310,000</b></em>
+					<em>보낸 회원 아이디 <b>ed1000</b></em>
+					<em>처리상태 <b class="font_gray">기간만료</b></em>
+					<font>발급일 : 2017-07-11</font>
+					<font>만료일자 : 2017-07-11</font>
+				</li>
+			</ul>
+			<div class="sub_board_page">
+				<dl>
+					<dt>▲</dt>
+					<dd>1</dd>
+					<dd class="on">2</dd>
+					<dd>3</dd>
+					<dd>4</dd>
+					<dd>5</dd>
+					<dt>▼</dt>
+				</dl>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<script>
+$(document).ready(function(){
+$(".coupon_issue_btn_wrap > span").eq(0).click();
+
+});
+$(".coupon_issue_btn_wrap > span").click(function(){
+	var num = $(this).index();
+	$(".coupon_issue_btn_wrap > span").removeClass('on');
+	$(this).addClass('on');
+	$(".coupon_issue_box").hide();
+	$(".coupon_issue_box").eq(num).show();
+
+});
+</script>
+<?php include_once('../footer.html'); ?>

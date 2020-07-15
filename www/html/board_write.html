@@ -1,0 +1,387 @@
+<?php include_once('sub_header.html'); ?>
+<script>
+$(document).ready(function(){
+	$(".sub_header > .top2 > li:nth-child(10)").addClass('active');
+});
+</script>
+<div class="sub_bg">
+	<div class="sub_wrap type2">
+		<div class="sub_title">
+			<div class="title1">게시판</div>
+			<div class="title2">GOBET FREEBOARD</div>
+		</div>
+
+		<div class="sub-box">
+
+			<div class="board_wrap">
+
+				<input type="text" class="sub_board_write_title" placeholder="제목을 입력해주세요." />
+				<h2 class="sub_board_write_info add_btn" onClick="$(this).removeClass('add_btn'); $('table.hide').removeClass('hide'); $('.popup_box').removeClass('hide');">베팅내역 첨부</h2>
+
+				<div class="sub_board_view_con">
+					<table class="table-black mypage hide">
+						<thead>
+							<tr>
+								<td>베팅구분</td>
+								<td width="260">승(홈)<img src="/_go/renewal/img/icon_up.png" class="blink"></td>
+								<td>무</td>
+								<td width="260">패(원정)<img src="/_go/renewal/img/icon_down.png" class="blink"></td>
+								<td>점수</td>
+								<td>선택</td>
+								<td>결과</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="7" class="league_title">
+									<img src="/_go/renewal/img/icon_soccer.png" /><img src="/_go/renewal/img/icon_pic.png" /> &nbsp; 프리미어리그 &nbsp; - &nbsp; 12/09 15:00
+								</td>
+							</tr>
+							<tr>
+								<td>승무패</td>
+								<td class="selected01">
+									<span>
+										<span>멘체스터유나이티드</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td>
+									<span>
+										<span>1.20</span>
+										<em>아스날</em>
+									</span>
+								</td>
+								<td>0:2</td>
+								<td>홈팀 승</td>
+								<td class="noshot"><code>미적중</code></td>
+							</tr>
+							<tr>
+								<td>승무패</td>
+								<td>
+									<span>
+										<span>멘체스터유나이티드</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td class="selected01">
+									<span>
+										<span>1.20</span>
+										<em>아스날</em>
+									</span>
+								</td>
+								<td>0:2</td>
+								<td>홈팀 패</td>
+								<td class="shot"><code>적중</code></td>
+							</tr>
+							<tr>
+								<td colspan="7" class="table-left">
+									<div>
+										<span>
+											베팅일시&nbsp; : &nbsp;<font>2016-12-09(금) 15:20</font>&nbsp; / &nbsp;베팅금액&nbsp; : &nbsp;<font>100,000원</font><BR/>
+											배당률&nbsp; : &nbsp;<font>2.20</font>&nbsp; / &nbsp;적중예상금액&nbsp; : &nbsp;<font>220,000원</font>&nbsp; / &nbsp;당첨금&nbsp; : &nbsp;<B>220,000</B>
+										</span>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<h2 class="sub_board_write_info">
+						글내용 입력
+						<font>
+							욕설, 상대방 비방글, 타사이트 언급, 홍보 등은 경고없이 삭제되며 사이트 이용에 제한을 받을 수 있습니다.
+						</font>
+					</h2>
+					<textarea class="board_write_contents" placeholder="내용을 입력해주세요."></textarea>
+				</div>
+
+				<div class="btn_box btn_box_center">
+					<a href="/_go/renewal/board_view.html" class="btn_green">등록</a>
+					<a href="/_go/renewal/board_list.html" class="btn_gray">취소</a>
+				</div>
+
+			</div> <!-- board_wrap -->
+
+		</div> <!-- sub-box -->
+
+		<div class="popup_box hide">
+			<div class="popup_box_bg"></div>
+			<div class="sub_wrap">
+				<div class="mypage-title">베팅내역<em onClick="$('.popup_box').addClass('hide');"><img src="/img/btn_close(big).png" /></em></div>
+
+				<div class="mypage-type write" style="padding-bottom:25px; border-bottom:1px solid rgba(255, 255, 255, 0.15)">
+					<a href="" class="on">스포츠</a>
+					<dfn></dfn>
+					<a href="">파워볼게임</a>
+					<dfn></dfn>
+					<a href="#">파워사다리</a>
+					<dfn></dfn>
+					<a href="#">스피드키노</a>
+					<dfn></dfn>
+					<a href="#">키노사다리</a>
+					<dfn></dfn>
+					<a href="#">가상게임</a>
+				</div>
+
+					<table class="table-black mypage">
+						<thead>
+							<tr>
+								<td rowspan="2">선택</td>
+								<td>베팅구분</td>
+								<td width="260">승(홈)<img src="/_go/renewal/img/icon_up.png" class="blink"></td>
+								<td>무</td>
+								<td width="260">패(원정)<img src="/_go/renewal/img/icon_down.png" class="blink"></td>
+								<td>점수</td>
+								<td>선택</td>
+								<td>결과</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="8" class="league_title">
+									<img src="/_go/renewal/img/icon_soccer.png" /><img src="/_go/renewal/img/icon_pic.png" /> &nbsp; 프리미어리그 &nbsp; - &nbsp; 12/09 15:00
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="ckb_td"><input type="checkbox"></td>
+								<td>핸디캡</td>
+								<td class="selected01">
+									<span>
+										<span>바르셀로나</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td>
+									<span>
+										<span>1.20</span>
+										<em>레알마드리드</em>
+									</span>
+								</td>
+								<td>3 : 1</td>
+								<td>홈팀 승</td>
+								<td class="wait"><code>대기</code></td>
+							</tr>
+							<tr>
+								<td>승무패</td>
+								<td>
+									<span>
+										<span>바르셀로나</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td class="selected01">
+									<span>
+										<span>1.20</span>
+										<em>레알마드리드</em>
+									</span>
+								</td>
+								<td>3 : 1</td>
+								<td>홈팀 패</td>
+								<td class="wait"><code>대기</code></td>
+							</tr>
+
+							<tr>
+								<td colspan="8" class="league_title">
+									<img src="/_go/renewal/img/icon_soccer.png" /><img src="/_go/renewal/img/icon_pic.png" /> &nbsp; 프리미어리그 &nbsp; - &nbsp; 12/09 15:00
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3" class="ckb_td"><input type="checkbox"></td>
+								<td>승무패</td>
+								<td class="selected01">
+									<span>
+										<span>멘체스터유나이티드</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td>
+									<span>
+										<span>1.20</span>
+										<em>아스날</em>
+									</span>
+								</td>
+								<td>0:2</td>
+								<td>홈팀 승</td>
+								<td class="noshot"><code>미적중</code></td>
+							</tr>
+							<tr>
+								<td>승무패</td>
+								<td>
+									<span>
+										<span>멘체스터유나이티드</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td class="selected01">
+									<span>
+										<span>1.20</span>
+										<em>아스날</em>
+									</span>
+								</td>
+								<td>0:2</td>
+								<td>홈팀 패</td>
+								<td class="shot"><code>적중</code></td>
+							</tr>
+							<tr>
+								<td colspan="7" class="table-left">
+									<div>
+										<span>
+											베팅일시&nbsp; : &nbsp;<font>2016-12-09(금) 15:20</font>&nbsp; / &nbsp;베팅금액&nbsp; : &nbsp;<font>100,000원</font><BR/>
+											배당률&nbsp; : &nbsp;<font>2.20</font>&nbsp; / &nbsp;적중예상금액&nbsp; : &nbsp;<font>220,000원</font>&nbsp; / &nbsp;당첨금&nbsp; : &nbsp;<B>220,000</B>
+										</span>
+										<em>
+											<B>베팅취소</B>
+											<B>베팅삭제</B>
+											<font>내역올리기</font>
+										</em>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table-black mypage">
+						<thead>
+							<tr>
+								<td rowspan="2">선택</td>
+								<td>베팅구분</td>
+								<td width="260">승(홈)<img src="/_go/renewal/img/icon_up.png" class="blink"></td>
+								<td>무</td>
+								<td width="260">패(원정)<img src="/_go/renewal/img/icon_down.png" class="blink"></td>
+								<td>점수</td>
+								<td>선택</td>
+								<td>상태</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td colspan="8" class="league_title">
+									<img src="/_go/renewal/img/icon_soccer.png" /><img src="/_go/renewal/img/icon_pic.png" /> &nbsp; 프리미어리그 &nbsp; - &nbsp; 12/09 15:00
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="ckb_td"><input type="checkbox"></td>
+								<td>핸디캡</td>
+								<td class="selected01">
+									<span>
+										<span>비아레알</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td>
+									<span>
+										<span>1.20</span>
+										<em>세비야</em>
+									</span>
+								</td>
+								<td>3 : 1</td>
+								<td>홈팀 승</td>
+								<td class="shot"><code>적중</code></td>
+							</tr>
+							<tr>
+								<td>핸디캡</td>
+								<td>
+									<span>
+										<span>비아레알</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td class="selected01">
+									<span>
+										<span>1.20</span>
+										<em>세비야</em>
+									</span>
+								</td>
+								<td>3 : 1</td>
+								<td>홈팀 패</td>
+								<td class="noshot"><code>미적중</code></td>
+							</tr>
+
+							<tr>
+								<td colspan="8" class="league_title">
+									<img src="/_go/renewal/img/icon_soccer.png" /><img src="/_go/renewal/img/icon_pic.png" /> &nbsp; 프리미어리그 &nbsp; - &nbsp; 12/09 15:00
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3" class="ckb_td"><input type="checkbox"></td>
+								<td>승무패</td>
+								<td class="selected01">
+									<span>
+										<span>첼시</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td>
+									<span>
+										<span>1.20</span>
+										<em>리버풀</em>
+									</span>
+								</td>
+								<td>1:0</td>
+								<td>홈팀 승</td>
+								<td class="ing"><code>경기중</code></td>
+							</tr>
+							<tr>
+								<td>승무패</td>
+								<td>
+									<span>
+										<span>첼시</span>
+										<em>2.20</em>
+									</span>
+								</td>
+								<td><span class="margin">3.10</span></td>
+								<td class="selected01">
+									<span>
+										<span>1.20</span>
+										<em>리버풀</em>
+									</span>
+								</td>
+								<td>1:0</td>
+								<td>홈팀 패</td>
+								<td class="ing"><code>경기중</code></td>
+							</tr>
+							<tr>
+								<td colspan="7" class="table-left">
+									<div>
+										<span>
+											베팅일시&nbsp; : &nbsp;<font>2016-12-09(금) 15:20</font>&nbsp; / &nbsp;베팅금액&nbsp; : &nbsp;<font>100,000원</font><BR/>
+											배당률&nbsp; : &nbsp;<font>2.20</font>&nbsp; / &nbsp;적중예상금액&nbsp; : &nbsp;<font>220,000원</font>&nbsp; / &nbsp;당첨금&nbsp; : &nbsp;<B>220,000</B>
+										</span>
+										<em>
+											<B>베팅취소</B>
+											<B>베팅삭제</B>
+											<font>내역올리기</font>
+										</em>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="paging_box view_box">
+						<a href="">◀</a><a href="">1</a><a href="" class="hit">2</a><a href="">3</a><a href="">4</a><a href="">5</a><a href="">6</a><a href="">7</a><a href="">8</a><a href="">9</a><a href="">10</a><a href="">▶</a>
+					</div>
+
+					<div class="board_searchbox">
+						<input type="text" class="input_style1" style="width:150px" placeholder="검색어를 입력해주세요." />&nbsp;
+						<input type="submit" class='btn_green' value="검색">
+						<span class="btn_float_left"><a class="btn_green">전체선택</a>&nbsp;<a href="" class="btn_gray">선택삭제</a></span>
+						<span class="btn_float_right btn_orange" onClick="$('.popup_box').addClass('hide');">게시판에 베팅내역 올리기</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div> <!-- sub_wrap -->
+</div> <!-- sub_bg -->
+	
+<?php include_once('footer.html'); ?>

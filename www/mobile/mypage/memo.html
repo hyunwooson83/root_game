@@ -1,0 +1,56 @@
+<?php include_once('../header.html'); ?>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>쪽지함</span>
+			<em>Message</em>
+		</h1>
+		<code>쪽지보관은 최장5일 입니다.</code>
+	</div>
+
+	<div class="sub_mypage_wrap">
+		<ul class="sub_cash_list sub_freeboard_list">
+			<li>
+				<h3 onclick="location.href='/mobile/mypage/memo_view.html'">안녕하세요 오늘 아무리 생각해도 너무 더워서!!</h3>
+				<em><b>안읽음</b> &nbsp;|&nbsp; 보낸시간 : 2017-04-03 18:04</em>
+				<label class="no_bg" onclick="alert('삭제되었습니다.');"><img src="/mobile/img/img_trash_icon.png" /></label>
+			</li>
+			<li>
+				<h3 onclick="location.href='/mobile/mypage/memo_view.html'">안녕하세요 오늘 아무리 생각해도 난 너를~</h3>
+				<em><b>안읽음</b> &nbsp;|&nbsp; 보낸시간 : 2017-04-03 18:04</em>
+				<label class="no_bg" onclick="alert('삭제되었습니다.');"><img src="/mobile/img/img_trash_icon.png" /></label>
+			</li>
+			<li class="read">
+				<h3 onclick="location.href='/mobile/mypage/memo_view.html'">I can call it</h3>
+				<em><b class="on">안읽음</b> &nbsp;|&nbsp; 보낸시간 : 2017-04-03 18:04</em>
+				<label class="no_bg" onclick="alert('삭제되었습니다.');"><img src="/mobile/img/img_trash_icon.png" /></label>
+			</li>
+			<li class="read">
+				<h3 onclick="location.href='/mobile/mypage/memo_view.html'">안녕하세요 오늘 아무리 생각해도 너무 더워서!!</h3>
+				<em><b class="on">읽음</b> &nbsp;|&nbsp; 보낸시간 : 2017-04-03 18:04</em>
+				<label class="no_bg" onclick="alert('삭제되었습니다.');"><img src="/mobile/img/img_trash_icon.png" /></label>
+			</li>
+		</ul>
+
+		<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+		</div>
+
+		<div class="sub_board_btn">
+			<a href="">전체 읽음처리</a>
+		</div>
+	</div>
+
+</div>
+
+<?php include_once('../footer.html'); ?>

@@ -1,0 +1,232 @@
+<?php include_once('../header.html'); ?>
+
+<div class="nmenu member">
+	<code class="left" onClick="$('#nmenu_scroll').scrollLeft(-300);"><img src="/_go/renewal/mobile/img/nmenu_left_btn.png" /></code>
+	<div id="nmenu_scroll">
+		<ul class="nmenu_cate2">
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom.html'">총판현황</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom_per.html'" class="active">나를추천한회원</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/recom_calc.html'">하부회원보기</li>
+			<li>승패보고서</li>
+			<li>승패정산보고서</li>
+			<li>정산내역</li>
+		</ul>
+	</div>
+	<code class="right" onClick="$('#nmenu_scroll').scrollLeft(1000);"><img src="/_go/renewal/mobile/img/nmenu_right_btn.png" /></code>
+</div>
+
+<div id="sub_wrap">
+
+	<div class="sub_title">
+		<h1>
+			<span>나를추천한회원</span>
+			<em>Member tariff set</em>
+		</h1>
+
+	</div>	<div class="recom_top2">
+		<ul>
+			<li>
+				<div><img src="/_go/renewal/mobile/img/recom_bg.png" /></div>
+				<span>312명</span>
+				<var>추천회원수</var>
+			</li>
+			<li>
+				<div><img src="/_go/renewal/mobile/img/recom_bg.png" /></div>
+				<span class="font_gobet">17%</span>
+				<var>나의요율</var>
+			</li>
+			<li>
+				<div><img src="/_go/renewal/mobile/img/recom_bg.png" /></div>
+				<span>15%</span>
+				<var>실시간요율</var>
+			</li>
+			<li>
+				<div><img src="/_go/renewal/mobile/img/recom_bg2.png" /></div>
+				<span class="font_gobet2">5건</span>
+				<var>처리완료</var>
+			</li>
+			<li>
+				<div><img src="/_go/renewal/mobile/img/recom_bg2.png" /></div>
+				<span class="font_wred">12건</span>
+				<var>미처리</var>
+			</li>
+		</ul>
+	</div>
+	<div class="sub_mypage_wrap">
+		<ul class="sub_cash_list">
+			<li>
+				<div>
+					<em>추천 회원아이디</em>
+					<span class="font_gobet">red1</span>
+				</div>
+				<div>
+					<em>닉네임</em>
+					<span>오늘도도깨비</span>
+				</div>
+				<div>
+					<em>지금요율</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>지금요율(실시간)</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>회원가입일시</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>마지막로그인</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>처리상태</em>
+					<span class="font_gobet2">처리완료</span>
+				</div>
+				<div>
+					<em>요율설정</em>
+					<label onclick="recom_open();">요율설정</label>
+				</div>
+			</li>
+			<li>
+				<div>
+					<em>추천 회원아이디</em>
+					<span class="font_gobet">red1</span>
+				</div>
+				<div>
+					<em>닉네임</em>
+					<span>오늘도도깨비</span>
+				</div>
+				<div>
+					<em>지금요율</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>지금요율(실시간)</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>회원가입일시</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>마지막로그인</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>처리상태</em>
+					<span class="font_red">대기</span>
+				</div>
+				<div>
+					<em>요율설정</em>
+					<label onclick="recom_open();">요율설정</label>
+				</div>
+
+			</li>
+			
+			<li>
+				<div>
+					<em>추천 회원아이디</em>
+					<span class="font_gobet">red1</span>
+				</div>
+				<div>
+					<em>닉네임</em>
+					<span>오늘도도깨비</span>
+				</div>
+				<div>
+					<em>지금요율</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>지금요율(실시간)</em>
+					<span class="font_orange">0.25%</span>
+				</div>
+				<div>
+					<em>회원가입일시</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>마지막로그인</em>
+					<span>2016-12-11 18:00</span>
+				</div>
+				<div>
+					<em>처리상태</em>
+					<span class="font_gobet2">처리완료</span>
+				</div>
+				<div>
+					<em>요율설정</em>
+					<label onclick="recom_open();">요율설정</label>
+				</div>
+			</li>
+		</ul>
+
+		<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+		</div>
+
+	</div>
+
+</div>
+<div id="recom_bg" style="display: none;"></div>
+<div id="recom_add_setting" style="display: none;">
+	<em>요율 설정하기</em>
+	<div>
+		<em>회원정보</em>
+		<span>회원아이디 : blue1</span>
+		<span>닉네임 : 블루</span>
+		<span>가입일시 : 2016-12-11 18:00</span>
+		<span>처리상태 : <font class="font_red">대기</font></span>
+		<br>
+		<em>요율설정</em>
+		<div>
+			<select>
+				<option value="0.25">0.25</option>
+				<option value="0.30">0.30</option>
+				<option value="0.35">0.35</option>
+			</select>
+			<br><br>
+			<a href="javascript:recom_close();" class="ggray">확인</a>
+			<a href="javascript:recom_close();">취소</a>
+		</div>
+	</div>
+</div>
+<script>
+
+function recom_open(){
+	//$("html, body").bind('touchmove', function(e){e.preventDefault()});
+	$("#recom_add_setting").fadeIn();
+	$("#recom_bg").fadeIn();
+}
+function recom_close(){
+	//$("html, body").unbind('touchmove');
+	$("#recom_add_setting").fadeOut();
+	$("#recom_bg").fadeOut();
+}
+
+
+
+
+
+function recom_open1(idx){
+	$("#recom_id_"+idx).fadeOut('fast');
+	$("#recom_detail_"+idx).slideDown('fast');
+}
+
+function recom_close1(idz){
+	$("#recom_id_"+idz).fadeIn('fast');
+	$("#recom_detail_"+idz).slideUp('fast');
+}
+
+
+
+
+</script>
+<?php include_once('../footer.html'); ?>

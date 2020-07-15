@@ -1,0 +1,40 @@
+<div class="nmenu">	
+	<div class="nmenu_cate2">
+		<dl>
+			<dd onclick="location.href='/_cod/mobile/guide/mini_named_ladder.html'" data-num="1">네임드사다리</dd>
+			<dd onclick="location.href='/_cod/mobile/guide/mini_ladderx2.html'" data-num="2">다리다리</dd>
+			<dd onclick="location.href='/_cod/mobile/guide/mini_power_ladder.html'" data-num="3">파워사다리</dd>
+			<dd onclick="location.href='/_cod/mobile/guide/mini_kino_speed.html'" data-num="4">스피드키노</dd>
+			<dd onclick="location.href='/_cod/mobile/guide/mini_kino_ladder.html'"  data-num="5">키노사다리</dd>
+		</dl>
+	</div>
+	<em class="nmenu_cate2_left"><img src="/_cod/mobile/img/mini_top_leftarr.png"></em>
+	<em class="nmenu_cate2_right"><img src="/_cod/mobile/img/mini_top_rightarr.png"></em>
+
+</div>
+<!--
+<div class="introduce_list_wrap">
+	<div  class="list_box">
+		<ul class="introduce_list">
+			<li onclick="location.href='/_cod/mobile/guide/mini_named_ladder.html'" data-num="1"><em><img src="/_cod/mobile/img/main_menu/main_menu_icon24.png"></em></li>
+			<li onclick="location.href='/_cod/mobile/guide/mini_ladderx2.html'" data-num="2"><em><img src="/_cod/mobile/img/main_menu/main_menu_icon25.png"></em></li>
+			<li onclick="location.href='/_cod/mobile/guide/mini_power_ladder.html'" data-num="3"><em><img src="/_cod/mobile/img/main_menu/main_menu_icon26.png"></em></li>
+			<li onclick="location.href='/_cod/mobile/guide/mini_kino_speed.html'" data-num="4"><em><img src="/_cod/mobile/img/main_menu/main_menu_icon27.png"></em></li>
+		</ul>	
+		<ul class="introduce_list">
+			<li onclick="location.href='/_cod/mobile/guide/mini_kino_ladder.html'"  data-num="5"><em><img src="/_cod/mobile/img/main_menu/main_menu_icon28.png"></em></li>		
+		</ul>
+	</div>
+	<div class="prev"><img src="/_cod/mobile/img/intro/slide_prev.png"></div>
+	<div class="next"><img src="/_cod/mobile/img/intro/slide_next.png"></div>
+</div>
+-->
+<script>
+$(document).ready(function(){
+	$(".nmenu_cate2 > dl > dd").each(function(){
+		if( $(this).attr("data-num")==$("#sub_num").val() ){
+			$(this).addClass('active');
+		}
+	});
+});
+</script>

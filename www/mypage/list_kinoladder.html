@@ -1,0 +1,179 @@
+<?php include_once('../header.html'); ?>
+
+<div id="sub_wrap">
+	<div class="sub_title">
+		<ul class="sub_title_category">
+			<li onClick="location.href='/_go/renewal/mobile/mypage/list_sports.html'">스포츠</li>
+			<li onClick="location.href='/_go/renewal/mobile/mypage/list_evolution.html'">에볼루션</li>
+
+			<li onClick="location.href='/_go/renewal/mobile/mypage/list_powerball.html'" class="active">미니게임</li>
+			<li onClick="location.href='/_go/renewal/mobile/mypage/list_virtual.html'">가상게임</li>
+		</ul>
+		<h1>
+			<span>키노사다리 베팅내역</span>
+			<em>MINIGAME BETTING LIST</em>
+		</h1>
+	</div>
+
+	<div class="sub_mypage_wrap">
+		<div class="type_select" onclick="slide_type();">
+			<em>키노사다리</em>
+			<div><span id="type_select_arr"><img src="/_go/renewal/mobile/img/type_select_arr.png"></span></div>
+		</div>
+		<ul id="type_select_l" class="type_select_list">
+			<li onclick="location.href='/_go/renewal/mobile/mypage/list_powerball.html'">파워볼</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/list_powerladder.html'">파워사다리</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/list_speedkino.html'">스피드키노</li>
+			<li onclick="location.href='/_go/renewal/mobile/mypage/list_kinoladder.html'" class="active">키노사다리</li>
+		</ul>
+		<!-- 경기검색 { -->
+		<div class="sub_searchbox">
+			<div class="search">
+				<div>
+					<select class="style_select" style="width:35%">
+						<option value="2017-05-03">2017-05-03</option>
+						<option value="2017-05-03">2017-05-03</option>
+						<option value="2017-05-03">2017-05-03</option>
+					</select>
+					<select class="style_select" style="width:35%">
+						<option value="전체회차">전체회차</option>
+						<option value="102">102회</option>
+						<option value="101">101회</option>
+					</select>
+					<a href="" class="style_btn_confirm blue" style="padding:0.5em 1em ">검색하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="sports_list">
+
+		<dl class="sports_list_top">
+			<dd>승(홈)오버 <var class="arr_down arr_wave blink">▼</var></dd>
+			<dt>무/핸/합</dt>
+			<dd>패(원정)언더 <var class="arr_up arr_wave">▲</var></dd>
+		</dl>
+
+		<!-- League start { -->
+		<h1>
+			<span><img src="/_go/renewal/mobile/img/sub/icon_mini.png"></span> 키노사다리
+			<var>07/01 13:24</var>
+			<em>
+				<span>1:0 (승)</span>
+				<em class="win">적중</em>
+			</em>
+		</h1>
+		<ul>
+			<!-- 한경기 부분 { -->
+			<li style="border-bottom:none">
+				<dl>
+					<dd class="on">
+						<div>
+							<span>홀 102회</span>
+							<em><var class="arr_down arr_wave">▼</var>1.97</em>
+						</div>
+					</dd>
+					<dd class="space"></dd>
+					<dd class="center">
+						<div>
+							<em>VS</em>
+						</div>
+					</dd>
+					<dd class="space"></dd>
+					<dd>
+						<div class="right">
+							<em>1.97<var class="arr_up arr_wave">▲</var></em>
+							<span>102회 짝</span>
+						</div>
+					</dd>
+				</dl>
+			</li>
+			<!-- } 한경기 부분 -->
+		</ul>
+		<!-- } League end -->
+
+		<fieldset>
+			<em  ><input type="checkbox"></em>
+			베팅시간 : <b>12-9(금) 15:20</b> / 배당금액 : <b>10,000원</b><br>
+			배당률 : <b>2.20</b> / 예상 적중금액 : <b>22,000원</b> / 당첨금 : <b class="lose">0원</b>
+			<div>
+				<a href="">베팅취소</a> &nbsp;<a href="">삭제</a> &nbsp;<a href="">내역올리기</a>
+			</div>
+		</fieldset>
+
+		<!-- League start { -->
+		<h1>
+			<span><img src="/_go/renewal/mobile/img/sub/icon_mini.png"></span> 키노사다리
+			<var>07/01 13:24</var>
+			<em>
+				<span>0:1 (패)</span>
+				<em class="lose">미적중</em>
+			</em>
+		</h1>
+
+		<ul>
+			<!-- 한경기 부분 { -->
+			<li style="border-top:none">
+				<dl>
+					<dd>
+						<div>
+							<span>홀 101회</span>
+							<em><var class="arr_down arr_wave">▼</var>1.97</em>
+						</div>
+					</dd>
+					<dd class="space"></dd>
+					<dd class="center">
+						<div>
+							<em>VS</em>
+						</div>
+					</dd>
+					<dd class="space"></dd>
+					<dd class="on">
+						<div class="right">
+							<em>1.97<var class="arr_up arr_wave">▲</var></em>
+							<span>101회 짝</span>
+						</div>
+					</dd>
+				</dl>
+			</li>
+			<!-- } 한경기 부분 -->
+		</ul>
+		<!-- } League end -->
+
+		<fieldset>
+			<em  ><input type="checkbox"></em>
+			베팅시간 : <b>12-9(금) 15:20</b> / 배당금액 : <b>10,000원</b><br>
+			배당률 : <b>2.20</b> / 예상 적중금액 : <b>22,000원</b> / 당첨금 : <b class="ing">20,000원</b>
+			<div>
+				<a href="">베팅취소</a> &nbsp;<a href="">삭제</a> &nbsp;<a href="">내역올리기</a>
+			</div>
+		</fieldset>
+
+	</div> <!-- sports_list -->
+
+	<div class="sub_board" style="border-top:none">
+
+		<div class="sub_board_btn">
+			<a href="#" class="btn_gray">전체선택</a>
+			<a href="#" class="btn_gray">선택삭제</a>
+		</div>
+		<div class="sub_board_btn margin">
+			<a href="#">선택항목 게시판에 올리기</a>
+		</div>
+
+		<div class="sub_board_page">
+			<dl>
+				<dt class="page_prev"></dt>
+				<dd>1</dd>
+				<dd class="on">2</dd>
+				<dd>3</dd>
+				<dd>4</dd>
+				<dd>5</dd>
+				<dt class="page_next"></dt>
+			</dl>
+		</div>
+	</div>
+
+</div>
+
+<?php include_once('../footer.html'); ?>

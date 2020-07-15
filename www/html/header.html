@@ -1,0 +1,195 @@
+<?php
+//필요없음
+include_once("../../test.html");
+?><!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
+<link rel="shortcut icon" href="/_go/renewal/img/favicon.png">
+<title>GOBET</title>
+<link rel="stylesheet" href="/_go/renewal/css/gobet_style.css" />
+<link rel="stylesheet" href="/_go/renewal/css/swiper.min.css" />
+<script src="/_go/renewal/js/jquery-1.11.1.min.js"></script>
+<script src="/_go/renewal/js/jquery.easing.1.3.js"></script>
+<script src="/_go/renewal/js/gobet_script.js"></script>
+<script src="/_go/renewal/js/placeholders.min.js"></script>
+<script src="/_go/renewal/js/swiper.min.js"></script>
+<script src="/_go/renewal/js/slick.min.js"></script>
+
+
+</head>
+
+<?php
+switch ($pstyle) {
+	case "casino" : $body_bg = "bg_casino"; $wrap_bg = "wrap_casino"; break;
+	case "game" : $body_bg = "bg_game"; $wrap_bg = "wrap_game";	break;
+	case "main" : $body_bg = "bg_main"; $wrap_bg = "wrap_main"; break;
+	default : $body_bg = "bg_main"; $wrap_bg = "wrap_sub"; break;
+}
+?>
+
+<body class="<?php echo $body_bg ?>">
+<div id="wrap" class="<?php echo $wrap_bg ?>">
+
+<div id="header" class="main_header">
+
+	<div class="header_top">
+		<div class="center_wrap">
+			<span class="top_notice">
+				<em>긴급공지</em>
+				<div><code id="notice_slide" onclick="location.href='/_go/renewal/notice_view.html'" class="active">공지사항이 표시됩니다. 공지사항이 표시됩니다. 공지사항이 표시됩니다.</code></div>
+				<var onClick="$('#notice_slide').removeClass('active')"><img src="/_go/renewal/img/icon_pause_btn.png" /></var>
+			</span>
+			<ul class="g_menu">
+				<li onclick="location.href='/_go/renewal/notice_list.html'">공지사항</li>
+				<li onclick="location.href='/_go/renewal/qna_list.html'">문의하기</li>
+				<li onclick="location.href='/_go/renewal/mypage/money_money_charge.html'">충전/환전내역</li>
+				<li onclick="alert('계좌번호를 쪽지로 발송 해드렸습니다. 쪽지확인 부탁드립니다.'); location.href='/_go/renewal/mypage/memo_list.html'">계좌문의</li>
+				<li onclick="location.href='/_go/renewal/bettingrule/sports_soccer.html'">베팅규정</li>
+				<li onclick="location.href='/_go/renewal/event_list.html'">이벤트</li>
+			</ul>
+		</div>
+	</div> <!-- Menu_Top -->
+
+	<div class="header_middle">
+		<div class="center_wrap">
+
+			<div class="header_middle_left">
+				<span class="top_logo">
+					<img src="/_go/renewal/img/top_logo.png" onClick="location.href='/_go/renewal/gobet.html'" /><BR />
+					<label>
+						<font><img src="/_go/renewal/img/icon_clock.png" />KOREA</font>
+						<em>2017.04.07</em>
+						<code>10:21:32</code>
+					</label>
+				</span>
+			</div>
+
+			<div class="header_middle_right">
+				<ul>
+					<li>
+						<em>Lv.1</em>&nbsp;&nbsp;
+						<span class="hover" title="마이페이지 바로가기" onClick="location.href='/_go/renewal/mypage/member_info.html'">홍길동님</span>
+					</li>
+					<li>
+						<span>보유머니</span>&nbsp;&nbsp;
+						<em class="hover" title="보유금액충전내역 바로가기" onClick="location.href='/_go/renewal/mypage/money_money_charge.html'">1,120,000원</em>
+					</li>
+					<li>
+						<span>포인트</span>&nbsp;&nbsp;
+						<em class="hover" title="포인트적립내역 바로가기" onClick="location.href='/_go/renewal/mypage/member_point.html'">1,200P</em>
+					</li>
+					<li>
+						<span>쪽지</span>&nbsp;&nbsp;
+						<em class="hover" title="읽지 않은 쪽지 15건" onClick="location.href='/_go/renewal/mypage/memo_list.html'">15</em>
+					</li>
+				</ul>
+				<ol>
+					<li onclick="location.href='/_go/renewal/login.html'">로그아웃</li>
+					<li>
+						<span onclick="location.href='/_go/renewal/mypage/member_info.html'">마이페이지</span>
+					</li>
+					<li>
+						<span>충전</span>
+						<div>
+							<a href='/_go/renewal/cash_in_money.html'>보유머니충전</a>
+							<a href='/_go/renewal/cash_in_casino.html'>카지노충전</a>
+						</div>
+					</li>
+					<li>
+						<span>환전</span>
+						<div>
+							<a href='/_go/renewal/cash_out_money.html'>보유머니환전</a>
+							<a href='/_go/renewal/cash_out_casino.html'>카지노환전</a>
+						</div>
+					</li>
+					<li onclick="location.href='/_go/renewal/point_exchange.html'">
+						<span>포인트전환</span>
+					</li>
+					<li class="call" onclick="alert('전화상담신청이 완료되었습니다. 5분 이내에 전화드리겠습니다.'); location.href='/_go/renewal/mypage/memo_list.html'">
+						<span>전화상담신청</span>
+					</li>
+				</ol>
+			</div>
+		</div> <!-- Center_Wrap -->
+	</div> <!-- Menu_Middle -->
+
+	<div class="header_bottom sub_header">
+		<ul class="top2">
+			<li onClick="location.href='/_go/renewal/live_list.html'">라이브베팅</li>
+			<li onClick="location.href='/_go/renewal/cross_list.html'">크로스</li>
+			<li onClick="location.href=''">스페셜</li>
+			<li onClick="location.href=''">핸디캡</li>
+			<li onClick="location.href=''">전반전</li>
+			<li onClick="location.href='/_go/renewal/evolution.html'">에볼루션카지노</li>
+			<li ><span onclick="location.href='/_go/renewal/casino'">카지노게임</span>
+				<div>
+					<dl>
+						<dt></dt>
+						<dd onclick="location.href='/_go/renewal/casino'">카지노메인</dd>
+						<dd onclick="location.href='/_go/renewal/casino/microgaming_intro.html'">마이크로</dd>
+						<dd onclick="location.href='/_go/renewal/casino/asiagaming_intro.html'">아시아게이밍</dd>
+						<dd onclick="location.href='/_go/renewal/casino/taishan_intro.html'">타이산</dd>
+						<dd onclick="location.href='/_go/renewal/casino/allbet_intro.html'">올벳</dd>
+						<dd onclick="location.href='/_go/renewal/casino/playtech_intro.html'">플레이텍</dd>
+						<dd onclick="location.href='/_go/renewal/casino/table_guide1.html'">테이블가이드</dd>
+						<dd onclick="location.href='/_go/renewal/casino/casino_rule.html'">카지노규정</dd>
+						<dd onclick="location.href='/_go/renewal/cash_in_casino.html'">카지노충전/환전</dd>
+					</dl>
+				</div>
+			</li>
+			<li><span onclick="location.href='/_go/renewal/minigame/game_powerball.html'">미니게임</span>
+				<div>
+					<dl>
+						<dt></dt>
+						<dd onclick="location.href='/_go/renewal/minigame/game_powerball.html'">파워볼게임</dd>
+						<dd onclick="location.href='/_go/renewal/minigame/game_powerball_ladder.html'">파워사다리</dd>
+						<dd onclick="location.href='/_go/renewal/minigame/game_kino_speed.html'">스피드키노</dd>
+						<dd onclick="location.href='/_go/renewal/minigame/game_kino_ladder.html'">키노사다리</dd>
+						<dd onclick="location.href='/_go/renewal/minigame/game_888_ladder.html'">방구차사다리</dd>
+						<dd onclick="location.href='/_go/renewal/minigame/game_888_dice.html'">주사위게임</dd>
+					</dl>
+				</div>
+			</li>
+			<li onclick="alert('현재 준비중인 서비스입니다.')">가상게임
+			</li>
+			<li onclick="location.href='/_go/renewal/live_streaming.html'">라이브영상
+			</li>
+			<li>
+				<span onclick="location.href='/_go/renewal/mypage/betlist_sports.html'">베팅내역</span>
+				<div>
+					<dl>
+						<dt></dt>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_sports.html'">스포츠게임</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_evolution.html'">에볼루션카지노</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_powerb.html'">파워볼게임</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_powerld.html'">파워사다리</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_speedk.html'">스피드키노</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_kladder.html'">키노사다리</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_carladder.html'">방구차사다리</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_mini_dice.html'">주사위게임</dd>
+						<dd onclick="location.href='/_go/renewal/mypage/betlist_virtual.html'">가상게임</dd>
+					</dl>
+				</div>
+			</li>
+			<li onClick="location.href='/_go/renewal/game_result.html'">경기결과
+			</li>
+			<li onClick="location.href='/_go/renewal/board_list.html'">게시판</li>
+			<li><span onclick="location.href='/_go/renewal/notice_list.html'">고객센터</span>
+				<div>
+					<dl>
+						<dt></dt>
+						<dd onclick="location.href='/_go/renewal/notice_list.html'">공지사항</dd>
+						<dd onclick="location.href='/_go/renewal/qna_list.html'">1:1문의</dd>
+						<dd onclick="location.href='/_go/renewal/faq_list.html'">자주묻는질문</dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+	</div> <!-- Menu_Bottom -->
+
+</div> <!-- header -->
+
+<div id="body-contents">
